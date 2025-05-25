@@ -2,7 +2,7 @@
 title: Vatché Chamlian
 description: 'Thinker, Tinker, AI Builder' # this means to ignore newlines until "baseurl:"
 permalink: ':title:output_ext'
-baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: "" # Changed from "/" to "" for custom domain
 url: "https://vatchechamlian.com" # the base hostname & protocol for your site, e.g. http://example.com
 logo: "/assets/img/branding/MVM-logo-full.svg"
 logo-icon: "/assets/img/branding/MVM-symbol.svg"
