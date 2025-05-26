@@ -9,7 +9,6 @@ tags: [cms, headless-cms, wordpress, development]
 image: /assets/img/posts/20230815/charlie-deets-DgpX3oYADmA-unsplash.jpg
 image_alt: "decorative - coin with a headless avatar"
 author: Vatché
-github:  /headless-cms/
 mathjax: yes
 ---
 Although we understand the intention of the phrase "Headless CMS" it seems to be incorrect, it's more like "multi headed" CMS or Hydra CMS. The whole point of a headless cms is that you have a front-end that is decoupled from the back-end and this gives you the flexibility to have one source of truth (for your content, authentication, etc) while having many different methods of "showing" or interacting with what is in the backend. This is really helpful if you have multiple channels to reach your potential customers or existing users. It's not just your website, its; the voice assistant, the smart watch, e-commerce, companion app, syndicating to other people's apps, etc.
