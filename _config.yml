@@ -4,9 +4,9 @@ description: 'Thinker, Tinker, AI Builder' # this means to ignore newlines until
 permalink: ':title:output_ext'
 baseurl: "" # Changed from "/" to "" for custom domain
 url: "https://vatchechamlian.com" # the base hostname & protocol for your site, e.g. http://example.com
-logo: "/assets/img/branding/MVM-logo-full.svg"
+logo: "/assets/img/branding/vatchesblog-logo.png"
 logo-icon: "/assets/img/branding/MVM-symbol.svg"
-logo-icon-SEO: "/assets/img/branding/MVM-symbol-black.png" # must be a non SVG file
+logo-icon-SEO: "/assets/img/branding/vatchesblog-logo.png" # must be a non SVG file
 
 # Night/Dark mode
 # Default mode is "auto", "auto" is for auto nightshift
@@ -21,7 +21,7 @@ logo-icon-SEO: "/assets/img/branding/MVM-symbol-black.png" # must be a non SVG f
 # night_mode: "manual"
 mode: dark # light or dark (default is light)
 
-logo-dark: "/assets/img/branding/MVM-logo-full-dark.svg"
+logo-dark: "/assets/img/branding/vatchesblog-logo.png"
 highlight_theme: syntax-base16.monokai.dark # select a dark theme for the code highlighter if needed
 
 # Author settings
