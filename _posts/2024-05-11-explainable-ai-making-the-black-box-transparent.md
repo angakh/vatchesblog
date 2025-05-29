@@ -1,14 +1,20 @@
 ---
+author: Vatché
+category: opinion
+date: 2024-05-11
+description: As AI systems grow more complex, they often become opaque black boxes.
+  Explainable AI emerges as a solution to make AI systems more transparent, interpretable,
+  and trustworthy.
+img: posts/20240511/mouse-black-box-ai.jpeg
 layout: post
 read_time: true
 show_date: true
-title: "Explainable AI: Making the Black Box Transparent"
-date: 2024-05-11
-img: posts/20240511/mouse-black-box-ai.jpeg
-tags: [artificial intelligence, explainable AI, machine learning, transparency, ethics, XAI]
-category: opinion
-author: Vatché
-description: "As AI systems grow more complex, they often become opaque black boxes. Explainable AI emerges as a solution to make AI systems more transparent, interpretable, and trustworthy."
+tags:
+- Artificial Intelligence
+- Data Science & Analytics
+- Privacy & Ethics
+- Research & Academia
+title: 'Explainable AI: Making the Black Box Transparent'
 ---
 
 As AI systems grow more complex, they often become opaque "black boxes," making it difficult for users to understand how decisions are made. This lack of transparency can lead to mistrust and hesitation in adopting AI technologies, especially in critical sectors. Explainable AI (XAI) emerges as a solution to this challenge, aiming to make AI systems more transparent, interpretable, and trustworthy.

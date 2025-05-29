@@ -1,14 +1,17 @@
 ---
+author: Vatché
+category: opinion
+date: 2025-05-08
+description: Development environments have evolved from 'works on my machine' nightmares
+  to consistent, shareable containers. Here's your guide to Docker dev containers,
+  cloud IDEs, and best practices.
+img: posts/20250508/cgi-render-docker-logo.jpg
 layout: post
 read_time: true
 show_date: true
-title: "From 'Works on My Machine' to 'Works for Everyone'"
-date: 2025-05-08
-img: posts/20250508/cgi-render-docker-logo.jpg
-tags: [Docker, dev containers, cloud development, containerization, development environments, DevOps]
-category: opinion
-author: Vatché
-description: "Development environments have evolved from 'works on my machine' nightmares to consistent, shareable containers. Here's your guide to Docker dev containers, cloud IDEs, and best practices."
+tags:
+- Development & DevOps
+title: From 'Works on My Machine' to 'Works for Everyone'
 ---
 
 A long time ago, when I was working in the Drupal CMS space, I was introduced to Lando. It was one of the first times I had seen a docker container impact the workflow of a project. It was not easy to setup initially but in the end the result was so positive, that it could not be ignored. Development environments have evolved significantly since then to solve the "works on my machine" problem.

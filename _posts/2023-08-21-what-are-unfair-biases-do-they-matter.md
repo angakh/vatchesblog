@@ -1,14 +1,18 @@
 ---
+author: Vatché
+category: ai
+date: 2023-08-21
+description: Exploring the critical issue of unfair biases in AI systems, their potential
+  impacts, and practical strategies for detection and mitigation to ensure fair and
+  ethical AI deployment.
+img: posts/20230821/OIG.jpg
 layout: post
 read_time: true
 show_date: true
-title: "What are unfair biases and do they matter?"
-date: 2023-08-21
-img: posts/20230821/OIG.jpg
-tags: [ai, biases, compliance, llms, models, artificial intelligence, fairness]
-category: ai
-author: Vatché
-description: "Exploring the critical issue of unfair biases in AI systems, their potential impacts, and practical strategies for detection and mitigation to ensure fair and ethical AI deployment."
+tags:
+- Artificial Intelligence
+- Privacy & Ethics
+title: What are unfair biases and do they matter?
 ---
 
 As artificial intelligence systems grow more ubiquitous and impactful across society, ensuring they treat all people fairly has become a critical ethical priority. Left unchecked, AI risks encoding and amplifying many of the same unfair biases that unfortunately still persist in human decision-making – around gender, race, age, appearance, socioeconomic status and more.

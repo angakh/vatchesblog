@@ -1,14 +1,19 @@
 ---
+author: Vatché
+category: opinion
+date: 2024-10-04
+description: Get up and running with a local AI chatbot in under an hour using Ollama.
+  It's free, private, and surprisingly powerful—here's your step-by-step guide.
+img: posts/20241004/ollama-cropped.jpeg
 layout: post
 read_time: true
 show_date: true
-title: "Ollama: the open-source solution for your local LLM dreams"
-date: 2024-10-04
-img: posts/20241004/ollama-cropped.jpeg
-tags: [ollama, local LLM, open source, privacy, AI tools, tutorial]
-category: opinion
-author: Vatché
-description: "Get up and running with a local AI chatbot in under an hour using Ollama. It's free, private, and surprisingly powerful—here's your step-by-step guide."
+tags:
+- Artificial Intelligence
+- Privacy & Ethics
+- Technical Tutorials
+- Tools & Productivity
+title: 'Ollama: the open-source solution for your local LLM dreams'
 ---
 
 This is..(sniffle)…it's like Christmas morning. I am so excited to share this with you. I came across Ollama today and within an hour was up and running on a laptop. I decided to do the same on my desktop so I could get more power and take screenshots as I share the simple process of getting a local AI chatbot up and running, with Ollama.

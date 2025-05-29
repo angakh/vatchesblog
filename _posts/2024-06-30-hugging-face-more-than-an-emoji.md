@@ -1,14 +1,20 @@
 ---
+author: Vatché
+category: opinion
+date: 2024-06-30
+description: Hugging Face has emerged as a pivotal platform in the AI ecosystem, offering
+  invaluable resources for developers, researchers, and startups venturing into artificial
+  intelligence.
+img: posts/20240630/hf-logo-with-title.png
 layout: post
 read_time: true
 show_date: true
-title: "Hugging Face, more than an emoji"
-date: 2024-06-30
-img: posts/20240630/hf-logo-with-title.png
-tags: [artificial intelligence, hugging face, machine learning, open source, developer tools, transformers]
-category: opinion
-author: Vatché
-description: "Hugging Face has emerged as a pivotal platform in the AI ecosystem, offering invaluable resources for developers, researchers, and startups venturing into artificial intelligence."
+tags:
+- Artificial Intelligence
+- Data Science & Analytics
+- Development & DevOps
+- Tools & Productivity
+title: Hugging Face, more than an emoji
 ---
 
 Hugging Face has emerged as a pivotal platform in the AI ecosystem, offering invaluable resources for developers, researchers, and startups venturing into the world of artificial intelligence. Founded in 2016, this New York-based company has rapidly evolved into a hub for machine learning innovation, providing a comprehensive suite of tools and services that democratize AI development. The last time I felt like this was when a friend of mine showed me alt binaries newsgroups.

@@ -1,14 +1,18 @@
 ---
+author: Vatché
+category: venture-capital
+date: 2023-10-17
+description: Exploring how AI is creating similar startup ideas and the challenges
+  this poses for venture capital firms when evaluating investments in an increasingly
+  homogenized innovation landscape.
+img: posts/20231017/lala-azizli-OFZUaeYKP3k-unsplash-1536x1024.jpg
 layout: post
 read_time: true
 show_date: true
-title: "AI: The New Challenge for Venture Capital Firms"
-date: 2023-10-17
-img: posts/20231017/lala-azizli-OFZUaeYKP3k-unsplash-1536x1024.jpg
-tags: [ai, startups, vc, venture-capital, entrepreneurship, innovation]
-category: venture-capital
-author: Vatché
-description: "Exploring how AI is creating similar startup ideas and the challenges this poses for venture capital firms when evaluating investments in an increasingly homogenized innovation landscape."
+tags:
+- Artificial Intelligence
+- Business & Innovation
+title: 'AI: The New Challenge for Venture Capital Firms'
 ---
 
 I have been talking to a lot of VC firms lately and I thought of something that I would love your feedback on. Do you think AI is going to create a wave of ideas that are similar in nature?

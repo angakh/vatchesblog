@@ -1,14 +1,20 @@
 ---
+author: Vatché
+category: dev-tools
+date: 2024-01-04
+description: Exploring Jupyter Notebooks as interactive coding environments for AI
+  and data science projects, including their benefits, alternatives, and the OpenAI
+  cookbook examples.
+img: posts/20240104/pexels-t-keawkanok-13229882-2000x1125.jpg
 layout: post
 read_time: true
 show_date: true
-title: "What are Jupyter Notebooks and should you use them?"
-date: 2024-01-04
-img: posts/20240104/pexels-t-keawkanok-13229882-2000x1125.jpg
-tags: [ai, data-science, dev, jupyter-notebooks, local-development, ml, notebooks, pip, python, vs-code]
-category: dev-tools
-author: Vatché
-description: "Exploring Jupyter Notebooks as interactive coding environments for AI and data science projects, including their benefits, alternatives, and the OpenAI cookbook examples."
+tags:
+- Artificial Intelligence
+- Data Science & Analytics
+- Development & DevOps
+- Tools & Productivity
+title: What are Jupyter Notebooks and should you use them?
 ---
 
 When I first started to write code…oh man, I'm going to date myself here. When I first started to write code the only tools that I had at my disposal like everyone else was the computer itself and literature. There was no web, github, youtube, or udemy. There was the 2600 quarterly, Softalk, Compute! and more that I can't recall. You would learn by doing, commenting was your best bet and there was a lot of trial and error. Debugging was a pain and often times made me want to quit all together.

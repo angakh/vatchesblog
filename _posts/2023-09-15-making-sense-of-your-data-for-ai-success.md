@@ -1,14 +1,20 @@
 ---
+author: Vatché
+category: data-analytics
+date: 2023-09-15
+description: A comprehensive guide to organizing structured and unstructured data
+  for AI implementation, including team requirements, tools, and strategies for successful
+  AI adoption.
+img: posts/20230915/claudio-schwarz-fyeOxvYvIyY-unsplash.jpg
 layout: post
 read_time: true
 show_date: true
-title: "Making Sense of Your Data for AI Success"
-date: 2023-09-15
-img: posts/20230915/claudio-schwarz-fyeOxvYvIyY-unsplash.jpg
-tags: [ai, data-privacy, data-science, email, generative-ai, llms, teams, machine learning]
-category: data-analytics
-author: Vatché
-description: "A comprehensive guide to organizing structured and unstructured data for AI implementation, including team requirements, tools, and strategies for successful AI adoption."
+tags:
+- Artificial Intelligence
+- Business & Innovation
+- Data Science & Analytics
+- Privacy & Ethics
+title: Making Sense of Your Data for AI Success
 ---
 
 You just got a call, someone very important to you is coming over in an hour. Now I know most of you will not agree with this example but in my house that means we have one hour to get the place cleaned up, get something to serve my guests and don't greet them looking like I just ran a marathon. For your business AI is that guest. And your house is the data you have.

@@ -1,14 +1,18 @@
 ---
+author: Vatché
+category: ai
+date: 2023-09-06
+description: A comprehensive guide to Retrieval Augmented Generation (RAG), exploring
+  how this technique enhances AI models by combining foundation models with external
+  knowledge retrieval systems.
+img: posts/20230906/jaredd-craig-HH4WBGNyltc-unsplash-scaled-e1693973271770.jpg
 layout: post
 read_time: true
 show_date: true
-title: "AI Gets a Cheat Sheet: Retrieval Augmentation Explained"
-date: 2023-09-06
-img: posts/20230906/jaredd-craig-HH4WBGNyltc-unsplash-scaled-e1693973271770.jpg
-tags: [ai, azure, data-privacy, llms, rag, retrieval-augmented-generation, vectors, artificial intelligence]
-category: ai
-author: Vatché
-description: "A comprehensive guide to Retrieval Augmented Generation (RAG), exploring how this technique enhances AI models by combining foundation models with external knowledge retrieval systems."
+tags:
+- Artificial Intelligence
+- Privacy & Ethics
+title: 'AI Gets a Cheat Sheet: Retrieval Augmentation Explained'
 ---
 
 After [Shaun Scovill](https://shaunscovil.com/) introduced me to Retrieval Augmented Generation (RAG), I dove in deep. Having now spent time with it, I want to explain RAG for those that don't know what it is and why this technique is so important. Before getting into what RAG is, I want to make sure you understand the concept of foundation models in AI. Foundation models are large, multi-purpose AI models trained on massive data which serve as a common basis for developing specialized applications. Think of them like a broad foundation on which you can build different vertical solutions.

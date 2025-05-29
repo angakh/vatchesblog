@@ -1,14 +1,20 @@
 ---
+author: Vatché
+category: ai
+date: 2023-10-24
+description: Examining the concerning risks and limited rewards of deepfake technology,
+  from misinformation and market manipulation to privacy violations and the erosion
+  of truth in digital media.
+img: posts/20231024/steve-johnson-wj_LPlw2Rns-unsplash-1536x864.jpg
 layout: post
 read_time: true
 show_date: true
-title: "The risks and rewards of deepfake tech"
-date: 2023-10-24
-img: posts/20231024/steve-johnson-wj_LPlw2Rns-unsplash-1536x864.jpg
-tags: [ai, deepfake, ethics, ml, opinion, artificial intelligence, synthetic media]
-category: ai
-author: Vatché
-description: "Examining the concerning risks and limited rewards of deepfake technology, from misinformation and market manipulation to privacy violations and the erosion of truth in digital media."
+tags:
+- Artificial Intelligence
+- Data Science & Analytics
+- Emerging Technologies
+- Opinion & Industry Analysis
+title: The risks and rewards of deepfake tech
 ---
 
 I was recently asked to comment on a LinkedIn post regarding deepfakes. After submitting my knee jerk reaction comment, I started to think about it more. Although deepfakes show promise for many applications, they also pose risks that need to be addressed. What exactly are deepfakes? They are highly realistic digital manipulations of audio, video or still images created by training AI models. The results can be startlingly convincing, with the synthetic media able to depict words and actions that never actually occurred. I have a few examples posted in this article but most of them are old and even with the older tech the results are…scary.

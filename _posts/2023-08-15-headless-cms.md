@@ -1,15 +1,17 @@
 ---
+author: Vatché
+category: opinion
+date: 2023-08-15
+description: What’s the point of a headless CMS and do you need one? We cover some
+  of the reasons why you should or should not and explain why its called headless
+  even though it really isn’t.
+img: posts/20230815/charlie-deets-DgpX3oYADmA-unsplash.jpg
 layout: post
 read_time: true
 show_date: true
-title:  "The headless CMS and why it’s not"
-date: 2023-08-15
-img: posts/20230815/charlie-deets-DgpX3oYADmA-unsplash.jpg
-# img_alt: "decorative - coin with a headless avatar"
-tags: [cms, headless-cms, wordpress, development]
-category: opinion
-author: Vatché
-description: "What’s the point of a headless CMS and do you need one? We cover some of the reasons why you should or should not and explain why its called headless even though it really isn’t."
+tags:
+- Development & DevOps
+title: The headless CMS and why it’s not
 ---
 Although we understand the intention of the phrase "Headless CMS" it seems to be incorrect, it's more like "multi headed" CMS or Hydra CMS. The whole point of a headless cms is that you have a front-end that is decoupled from the back-end and this gives you the flexibility to have one source of truth (for your content, authentication, etc) while having many different methods of "showing" or interacting with what is in the backend. This is really helpful if you have multiple channels to reach your potential customers or existing users. It's not just your website, its; the voice assistant, the smart watch, e-commerce, companion app, syndicating to other people's apps, etc.
 

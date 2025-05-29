@@ -1,14 +1,18 @@
 ---
+author: Vatché
+category: opinion
+date: 2024-06-15
+description: Perplexity AI has emerged as a significant player in search engines and
+  research tools. Can it dethrone Google as our go-to search engine? For me it already
+  has, but it might need a rebrand first.
+img: posts/20240615/perplexity-man-searching.jpeg
 layout: post
 read_time: true
 show_date: true
-title: "Perplexity could dethrone google"
-date: 2024-06-15
-img: posts/20240615/perplexity-man-searching.jpeg
-tags: [artificial intelligence, perplexity, search engines, google, generative AI, research tools]
-category: opinion
-author: Vatché
-description: "Perplexity AI has emerged as a significant player in search engines and research tools. Can it dethrone Google as our go-to search engine? For me it already has, but it might need a rebrand first."
+tags:
+- Artificial Intelligence
+- Opinion & Industry Analysis
+title: Perplexity could dethrone google
 ---
 
 Perplexity AI has emerged as a significant player in the realm of search engines and research tools, offering a unique blend of features that distinguish it from traditional platforms. Can it dethrone Google as our go-to search engine of choice? For me it already has, but I think it is going to need to go through a rebrand if it wants to. In the following article we will cover some of the reasons why I find myself using it more than Google or Bing. I also want to discuss why I think it is going to need to change its name if it wants to compete for the top spot.

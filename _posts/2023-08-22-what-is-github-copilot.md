@@ -1,14 +1,19 @@
 ---
+author: Vatché
+category: dev-tools
+date: 2023-08-22
+description: An in-depth look at GitHub Copilot, the AI-powered coding assistant that's
+  transforming how developers write code, including privacy considerations and productivity
+  benefits.
+img: posts/20230822/github-mascot.jpg
 layout: post
 read_time: true
 show_date: true
-title: "What is GitHub's Copilot?"
-date: 2023-08-22
-img: posts/20230822/github-mascot.jpg
-tags: [ai, codex, coding, copilot, software, artificial intelligence, developer tools]
-category: dev-tools
-author: Vatché
-description: "An in-depth look at GitHub Copilot, the AI-powered coding assistant that's transforming how developers write code, including privacy considerations and productivity benefits."
+tags:
+- Artificial Intelligence
+- Development & DevOps
+- Tools & Productivity
+title: What is GitHub's Copilot?
 ---
 
 GitHub Copilot is an artificial intelligence assistant for software developers created by GitHub. It uses a cutting-edge AI technique called Codex to generate code suggestions and entire code blocks in real time as developers are writing. Copilot works inside a developer's editor or IDE (like VScode). As they are typing code, it will suggest potential continuations of what they are writing based on the context. For example, if a developer types "for i in range", Copilot may suggest "for i in range(10):" to complete the for loop. It can suggest names for functions and variables, boilerplate code, and even entire blocks of code like if statements or class definitions.

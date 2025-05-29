@@ -1,14 +1,18 @@
 ---
+author: Vatché
+category: machine-learning-ml
+date: 2023-09-27
+description: Exploring the revolutionary transformer architecture that powers modern
+  AI, from the groundbreaking 'Attention is All You Need' paper to today's business
+  applications and future possibilities.
+img: posts/20230927/arseny-togulev-liAwyJ64wHE-unsplash.jpg
 layout: post
 read_time: true
 show_date: true
-title: "Transformer Models – More than meets the eye"
-date: 2023-09-27
-img: posts/20230927/arseny-togulev-liAwyJ64wHE-unsplash.jpg
-tags: [ai, llms, nlp, transformers, machine-learning, neural-networks]
-category: machine-learning-ml
-author: Vatché
-description: "Exploring the revolutionary transformer architecture that powers modern AI, from the groundbreaking 'Attention is All You Need' paper to today's business applications and future possibilities."
+tags:
+- Artificial Intelligence
+- Data Science & Analytics
+title: Transformer Models – More than meets the eye
 ---
 
 If there is historic relevance worth mentioning, I will. In the case of transformers we must mention the Google document that (slight hesitation) started this AI revolution. In 2017 Google researchers published a paper called "Attention is all you need". This was the catalyst that catapulted AI into the mainstream a few years later. (Who knows, we may look back and say "this was when skynet was born"). We will cover why transformers are so important now, but I wanted to point out where it started because this was the advancement in research that produced a quicker and more efficient way for machines to work with larger than you can imagine datasets.

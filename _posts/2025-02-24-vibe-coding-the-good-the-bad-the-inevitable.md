@@ -1,14 +1,18 @@
 ---
+author: Vatché
+category: opinion
+date: 2025-02-24
+description: Vibe coding is transforming software development by letting developers
+  describe intent in natural language while AI handles implementation. Here's why
+  it's both revolutionary and controversial.
+img: posts/20250224/Futuristic-digital-workspace-with-a-developer-interacting-naturally-with-an-AI-assistant.jpeg
 layout: post
 read_time: true
 show_date: true
-title: "Vibe coding: the good, the bad, the inevitable"
-date: 2025-02-24
-img: posts/20250224/Futuristic-digital-workspace-with-a-developer-interacting-naturally-with-an-AI-assistant.jpeg
-tags: [vibe coding, artificial intelligence, programming, developer tools, AI assistance, software development]
-category: opinion
-author: Vatché
-description: "Vibe coding is transforming software development by letting developers describe intent in natural language while AI handles implementation. Here's why it's both revolutionary and controversial."
+tags:
+- Artificial Intelligence
+- Development & DevOps
+title: 'Vibe coding: the good, the bad, the inevitable'
 ---
 
 While working as the Senior Director of Technology (2021 to 2023) at Boston Digital (BD), I was tasked with the exploration of three areas, to see what new services BD could offer its clients. These areas were Augmented Reality, Virtual Reality, and Artificial Intelligence. Facebook had recently rebranded as Meta and everyone was buzzing about the "metaverse". We knew that of the three, VR was not the winner. In my opinion it was AI, AR, and VR in a distant third. But the buzz around it was too great so we created a Drupal connector that would allow marketers to edit existing content in VR applications without the use of a developer. But we used AI to help us do it.

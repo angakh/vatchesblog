@@ -1,14 +1,20 @@
 ---
+author: Vatché
+category: opinion
+date: 2024-04-14
+description: Quantum computing has the potential to revolutionize artificial intelligence,
+  but the technology is still in its early stages with both exciting possibilities
+  and significant challenges ahead.
+img: posts/20240414/quantum-computing-elephant-in-the-room.jpeg
 layout: post
 read_time: true
 show_date: true
-title: "Quantum Computing, the elephant in the room"
-date: 2024-04-14
-img: posts/20240414/quantum-computing-elephant-in-the-room.jpeg
-tags: [quantum computing, artificial intelligence, emerging tech, security, opinion]
-category: opinion
-author: Vatché
-description: "Quantum computing has the potential to revolutionize artificial intelligence, but the technology is still in its early stages with both exciting possibilities and significant challenges ahead."
+tags:
+- Artificial Intelligence
+- Emerging Technologies
+- Opinion & Industry Analysis
+- Privacy & Ethics
+title: Quantum Computing, the elephant in the room
 ---
 
 Quantum computing has the potential to revolutionize artificial intelligence, offering unprecedented computational power that could dramatically accelerate AI algorithms and unlock new capabilities. However, the technology is still in its early stages, with both exciting possibilities and significant challenges ahead.

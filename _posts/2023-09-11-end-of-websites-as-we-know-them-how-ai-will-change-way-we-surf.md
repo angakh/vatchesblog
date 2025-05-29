@@ -1,14 +1,18 @@
 ---
+author: Vatché
+category: business
+date: 2023-09-11
+description: Exploring how AI and chatbots will fundamentally transform website interactions,
+  moving from traditional browsing to conversational interfaces and what businesses
+  need to do to prepare.
+img: posts/20230911/lukas-hND1OG3q67k-unsplash.jpg
 layout: post
 read_time: true
 show_date: true
-title: "The End of Websites As We Know Them: How AI Will Change The Way We Surf"
-date: 2023-09-11
-img: posts/20230911/lukas-hND1OG3q67k-unsplash.jpg
-tags: [ai, chatbots, multichannel, semantic-content, web-design, user-experience]
-category: business
-author: Vatché
-description: "Exploring how AI and chatbots will fundamentally transform website interactions, moving from traditional browsing to conversational interfaces and what businesses need to do to prepare."
+tags:
+- Artificial Intelligence
+- Opinion & Industry Analysis
+title: 'The End of Websites As We Know Them: How AI Will Change The Way We Surf'
 ---
 
 The way we interact with websites is about to fundamentally change. For decades, the standard has been clicking around pages and hunting for information. But artificial intelligence is poised to disrupt this model entirely.

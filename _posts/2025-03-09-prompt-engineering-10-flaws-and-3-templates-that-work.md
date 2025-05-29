@@ -1,14 +1,20 @@
 ---
+author: Vatché
+category: opinion
+date: 2025-03-09
+description: Learn from common prompting mistakes and use proven templates for writing
+  and coding. Transform your AI interactions from frustrating to effective with these
+  practical approaches.
+img: posts/20250309/prompting.jpeg
 layout: post
 read_time: true
 show_date: true
-title: "Prompt Engineering: 10 Fatal Flaws & 3 Templates That Work"
-date: 2025-03-09
-img: posts/20250309/prompting.jpeg
-tags: [prompt engineering, artificial intelligence, AI writing, coding, templates, best practices]
-category: opinion
-author: Vatché
-description: "Learn from common prompting mistakes and use proven templates for writing and coding. Transform your AI interactions from frustrating to effective with these practical approaches."
+tags:
+- Artificial Intelligence
+- Development & DevOps
+- Technical Tutorials
+- Tools & Productivity
+title: 'Prompt Engineering: 10 Fatal Flaws & 3 Templates That Work'
 ---
 
 In this post we will cover some common mistakes I have seen people make in my training sessions and lunch-n-learns. I will also be providing you with some of the prompting methods that I have used successfully.

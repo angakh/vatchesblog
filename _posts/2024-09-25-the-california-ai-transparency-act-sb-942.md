@@ -1,14 +1,19 @@
 ---
+author: Vatché
+category: opinion
+date: 2024-09-25
+description: California's SB-942 aims to bring transparency to AI-generated content
+  starting January 1st, 2026. But can this landmark legislation actually be enforced
+  effectively?
+img: posts/20240925/sb-942.png
 layout: post
 read_time: true
 show_date: true
-title: "The California AI Transparency Act (SB-942)"
-date: 2024-09-25
-img: posts/20240925/sb-942.png
-tags: [artificial intelligence, California, legislation, transparency, regulation, SB-942]
-category: opinion
-author: Vatché
-description: "California's SB-942 aims to bring transparency to AI-generated content starting January 1st, 2026. But can this landmark legislation actually be enforced effectively?"
+tags:
+- Artificial Intelligence
+- Opinion & Industry Analysis
+- Privacy & Ethics
+title: The California AI Transparency Act (SB-942)
 ---
 
 January 1st, 2026, happy new year and mark your calendars! That is the day the California AI Transparency Act (SB-942), signed into law on September 19, 2024, will go into effect. This legislation aims to address the growing concerns surrounding AI-generated content and its potential for misuse. But is this something that can actually be enforced? I will start with some take-aways and summaries, towards the end of the post I will be covering some questions and concerns that I have regarding this legislation.

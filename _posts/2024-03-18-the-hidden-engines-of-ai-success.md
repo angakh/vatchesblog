@@ -1,14 +1,19 @@
 ---
+author: Vatché
+category: dev-tools
+date: 2024-03-18
+description: 'Exploring the critical infrastructure elements that power successful
+  AI startups: DevOps practices, advanced caching strategies, and scalable architectures
+  for handling growth and maintaining performance.'
+img: posts/20240318/growtika-f7uCQxhucw4-unsplash-2000x1125.jpg
 layout: post
 read_time: true
 show_date: true
-title: "The Hidden Engines of AI Success"
-date: 2024-03-18
-img: posts/20240318/growtika-f7uCQxhucw4-unsplash-2000x1125.jpg
-tags: [ai, dev, devops, efficiency, generative-ai, scalability, caching]
-category: dev-tools
-author: Vatché
-description: "Exploring the critical infrastructure elements that power successful AI startups: DevOps practices, advanced caching strategies, and scalable architectures for handling growth and maintaining performance."
+tags:
+- Artificial Intelligence
+- Development & DevOps
+- Tools & Productivity
+title: The Hidden Engines of AI Success
 ---
 
 A lot of my career was spent on developing web applications. One of the most important pieces of keeping a user on your site was speed. Users exhibit a decreasing tolerance for slow-loading web pages, significantly impacting their likelihood to stay or leave a site. Research indicates that **47% of consumers expect a website to load in 2 seconds or less**, while **40% will abandon a site if it takes more than 3 seconds** to load. The situation worsens with longer wait times; for instance, **53% of mobile users abandon sites that take longer than 3 seconds**. Moreover, studies show that each additional second of load time can lead to a **16% decrease in user satisfaction** and a **4% drop in conversion rates**. As the load time extends beyond 5 seconds, the probability of users bouncing increases dramatically, with a **90% increase in abandonment rates** noted when load times reach this threshold. Therefore, optimizing page speed is critical for retaining visitors and enhancing user experience. With a lot of bloated systems and javascript heavy themes in the past, the most common solution was a robust caching platform and content delivery networks (CDNs).

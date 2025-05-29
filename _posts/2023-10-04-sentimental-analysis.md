@@ -1,14 +1,18 @@
 ---
+author: Vatché
+category: data-analytics
+date: 2023-10-04
+description: A comprehensive guide to sentiment analysis, exploring machine learning
+  methods, transformer models, and real-world applications in finance, product development,
+  and employee monitoring.
+img: posts/20231004/nik-LUYD2b7MNrg-unsplash-1536x1024.jpg
 layout: post
 read_time: true
 show_date: true
-title: "It's time to get sentimental…analysis"
-date: 2023-10-04
-img: posts/20231004/nik-LUYD2b7MNrg-unsplash-1536x1024.jpg
-tags: [ai, data-science, ml, nlp, sentiment-analysis, transformers, machine-learning]
-category: data-analytics
-author: Vatché
-description: "A comprehensive guide to sentiment analysis, exploring machine learning methods, transformer models, and real-world applications in finance, product development, and employee monitoring."
+tags:
+- Artificial Intelligence
+- Data Science & Analytics
+title: It's time to get sentimental…analysis
 ---
 
 A long time ago, I interviewed at a company called Affectiva. The company spun out of MIT's Media Lab and was developed to help identify emotions for and from children with Autism. Fortunately or unfortunately depending on how you look at it, people realized that this could be used for marketing purposes. By analyzing the user's facial expressions while watching an ad, the application could identify at which points the user felt specific emotions. The insight gained from this was a useful metric for how user's felt about the ad, at which points they felt it, etc. This real-time sentiment analysis was very helpful but it had limitations and was not as scalable as scraping all comments about a product from a few different social media platforms.

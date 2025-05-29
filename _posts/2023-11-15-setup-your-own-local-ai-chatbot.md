@@ -1,14 +1,20 @@
 ---
+author: Vatché
+category: dev-tools
+date: 2023-11-15
+description: A comprehensive guide to setting up your own local AI chatbot using Koboldcpp
+  and LocalAI with Flowise, helping developers save costs while experimenting with
+  AI models.
+img: posts/20231115/mohamed-nohassi-2iUrK025cec-unsplash-1536x947.jpg
 layout: post
 read_time: true
 show_date: true
-title: "Setup your own local AI chatbot"
-date: 2023-11-15
-img: posts/20231115/mohamed-nohassi-2iUrK025cec-unsplash-1536x947.jpg
-tags: [ai, dev, flowise, generative-ai, local-development, localai, node, machine learning]
-category: dev-tools
-author: Vatché
-description: "A comprehensive guide to setting up your own local AI chatbot using Koboldcpp and LocalAI with Flowise, helping developers save costs while experimenting with AI models."
+tags:
+- Artificial Intelligence
+- Data Science & Analytics
+- Development & DevOps
+- Tools & Productivity
+title: Setup your own local AI chatbot
 ---
 
 **Update – 10/03/2024:** Ollama is a much easier way to get setup locally with a variety of LLMs. There is a section below called FlowiseAI, which is still a great tool for getting workflows done and may work with Ollama, but I need to test it out before making any recommendations. So if you are interested in a much easier approach to installing a local AI chatbot, please [read more here](https://nightfalladvisors.com/ollama-the-open-source-solution-for-your-local-llm-dreams/).

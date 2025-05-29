@@ -1,14 +1,19 @@
 ---
+author: Vatché
+category: opinion
+date: 2024-04-25
+description: The financial sector is undergoing a profound transformation driven by
+  AI. From algorithmic trading to fraud detection, AI is reshaping finance with unprecedented
+  opportunities—and significant risks.
+img: posts/20240425/monopoly-finance-ai.jpeg
 layout: post
 read_time: true
 show_date: true
-title: "AI in Finance: Advance to Go (Collect $200)"
-date: 2024-04-25
-img: posts/20240425/monopoly-finance-ai.jpeg
-tags: [artificial intelligence, finance, algorithmic trading, fraud detection, risk management, data privacy]
-category: opinion
-author: Vatché
-description: "The financial sector is undergoing a profound transformation driven by AI. From algorithmic trading to fraud detection, AI is reshaping finance with unprecedented opportunities—and significant risks."
+tags:
+- Artificial Intelligence
+- Business & Innovation
+- Privacy & Ethics
+title: 'AI in Finance: Advance to Go (Collect $200)'
 ---
 
 The financial sector is undergoing a profound transformation, for patrons of banks this is the biggest shift since banking online. Driven by the rapid advancement and integration of artificial intelligence (AI), banking and finance is rapidly changing. From algorithmic trading to fraud detection and personalized banking, AI is reshaping the landscape of finance, offering unprecedented opportunities for efficiency, accuracy, and innovation. But like every post I have written, we also need to discuss the risks that come along with these changes.

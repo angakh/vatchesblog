@@ -1,14 +1,20 @@
 ---
+author: Vatché
+category: technology
+date: 2024-03-27
+description: Federated learning is revolutionizing AI by enabling machine learning
+  across distributed datasets while maintaining privacy and security. Here's how it
+  works and why it matters.
+img: posts/20240327/federated-learning.jpeg
 layout: post
 read_time: true
 show_date: true
-title: "The Rise of Federated Learning in AI"
-date: 2024-03-27
-img: posts/20240327/federated-learning.jpeg
-tags: [AI, federated learning, machine learning, privacy, security, data analytics]
-category: technology
-author: Vatché
-description: "Federated learning is revolutionizing AI by enabling machine learning across distributed datasets while maintaining privacy and security. Here's how it works and why it matters."
+tags:
+- Artificial Intelligence
+- Data Science & Analytics
+- Emerging Technologies
+- Privacy & Ethics
+title: The Rise of Federated Learning in AI
 ---
 
 As artificial intelligence continues to evolve, one of the most significant challenges facing organizations is how to leverage diverse datasets for machine learning while maintaining data privacy and security. Enter federated learning—a revolutionary approach that's transforming how we train AI models across distributed environments.

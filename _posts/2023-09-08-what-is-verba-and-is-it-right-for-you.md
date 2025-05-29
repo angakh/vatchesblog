@@ -1,14 +1,19 @@
 ---
+author: Vatché
+category: dev-tools
+date: 2023-09-08
+description: An in-depth look at Verba by Weaviate, exploring how this RAG-as-a-Service
+  platform simplifies retrieval augmented generation and whether it's the right solution
+  for your AI needs.
+img: posts/20230908/weaviate.png
 layout: post
 read_time: true
 show_date: true
-title: "What is Verba and is it right for you?"
-date: 2023-09-08
-img: posts/20230908/weaviate.png
-tags: [ai, data-privacy, llms, vectors, rag, weaviate, verba, vector-database]
-category: dev-tools
-author: Vatché
-description: "An in-depth look at Verba by Weaviate, exploring how this RAG-as-a-Service platform simplifies retrieval augmented generation and whether it's the right solution for your AI needs."
+tags:
+- Artificial Intelligence
+- Privacy & Ethics
+- Tools & Productivity
+title: What is Verba and is it right for you?
 ---
 
 Some of the problems our clients face with Retrieval Augmented Generation is how to use it, what to use it with, and how to get the most out of it. Verba seems like the Wix of RAG. We are going to take a closer look at what Verba from Weaviate is and how it may change the way you look at RAG.

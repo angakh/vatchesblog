@@ -1,14 +1,18 @@
 ---
+author: Vatché
+category: opinion
+date: 2024-09-24
+description: Stanford's STORM promises to revolutionize research by generating comprehensive
+  reports with sources. But does this powerful AI tool enhance or replace human intellectual
+  engagement?
+img: posts/20240924/storm.jpeg
 layout: post
 read_time: true
 show_date: true
-title: "Stanford University's STORM tool"
-date: 2024-09-24
-img: posts/20240924/storm.jpeg
-tags: [artificial intelligence, Stanford, STORM, research tools, generative AI, academic research]
-category: opinion
-author: Vatché
-description: "Stanford's STORM promises to revolutionize research by generating comprehensive reports with sources. But does this powerful AI tool enhance or replace human intellectual engagement?"
+tags:
+- Artificial Intelligence
+- Research & Academia
+title: Stanford University's STORM tool
 ---
 
 In the ever-evolving landscape of artificial intelligence, Stanford University's STORM has emerged as a powerful new player, promising to revolutionize the way we research and synthesize information. This open-source project, capable of generating comprehensive reports on any given topic, complete with sources, raises intriguing questions about the future of knowledge curation and dissemination.

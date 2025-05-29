@@ -1,14 +1,18 @@
 ---
+author: Vatché
+category: business
+date: 2023-08-16
+description: Exploring best practices for training AI models on proprietary data while
+  managing risks around security, bias, and legal compliance.
+img: posts/20230816/private-data-1024x685.jpg
 layout: post
 read_time: true
 show_date: true
-title: "Training AI on Private Data – Risks, Rewards and Recommendations"
-date: 2023-08-16
-img: posts/20230816/private-data-1024x685.jpg
-tags: [biases, compliance, data-privacy, llms, artificial intelligence, machine learning]
-category: business
-author: Vatché
-description: "Exploring best practices for training AI models on proprietary data while managing risks around security, bias, and legal compliance."
+tags:
+- Artificial Intelligence
+- Data Science & Analytics
+- Privacy & Ethics
+title: Training AI on Private Data – Risks, Rewards and Recommendations
 ---
 
 More companies want to tap into their proprietary data troves to develop tailored, high-performance AI models. But training models on private data carries potential risks around data security, unfair bias, and legal compliance. Here we explore best practices for private AI training.

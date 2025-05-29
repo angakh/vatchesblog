@@ -1,14 +1,18 @@
 ---
+author: Vatché
+category: ai
+date: 2023-11-02
+description: A critical analysis of the White House's AI Executive Order, examining
+  concerns about regulatory capture, computational thresholds, and the potential stifling
+  of innovation in favor of established tech giants.
+img: posts/20231102/altman-biden-ng-1536x631.png
 layout: post
 read_time: true
 show_date: true
-title: "White House's Executive Order re: AI"
-date: 2023-11-02
-img: posts/20231102/altman-biden-ng-1536x631.png
-tags: [ai, opinion, regulations, policy, government, artificial intelligence]
-category: ai
-author: Vatché
-description: "A critical analysis of the White House's AI Executive Order, examining concerns about regulatory capture, computational thresholds, and the potential stifling of innovation in favor of established tech giants."
+tags:
+- Artificial Intelligence
+- Opinion & Industry Analysis
+title: 'White House''s Executive Order re: AI'
 ---
 
 October 30th, 2023: President Joe Biden issued an Executive Order regarding Artificial Intelligence. The executive order was signed on November 1st, 2023 and can be found [here](https://www.federalregister.gov/documents/2023/11/01/2023-24283/safe-secure-and-trustworthy-development-and-use-of-artificial-intelligence). As of writing this, the document has only 298 views, but if you look on linkedIn or X, you will see everyone talking about it's contents. I worry that people are just repeating what they heard from others, assuming that those they are quoting have read the actual document. Unfortunately this is creating a divide and the narratives are backed by personal interests. Those that want AI advancements to stay in the hands of the wealthy and powerful and those that want AI development to be in the hands of anyone and everyone. Both have good points, but this Executive Order is leaning towards fear mongering and a few notes on how innovation is top of mind.

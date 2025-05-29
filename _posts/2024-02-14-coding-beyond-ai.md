@@ -1,14 +1,20 @@
 ---
+author: Vatché
+category: dev-tools
+date: 2024-02-14
+description: Exploring how software engineers can evolve from coders to AI orchestrators,
+  mastering collaboration with AI tools while maintaining their unique human value
+  in the development process.
+img: posts/20240214/ai-orchestrator-1.jpeg
 layout: post
 read_time: true
 show_date: true
-title: "Coding Beyond AI"
-date: 2024-02-14
-img: posts/20240214/ai-orchestrator-1.jpeg
-tags: [ai, opinion, software engineering, career development, artificial intelligence]
-category: dev-tools
-author: Vatché
-description: "Exploring how software engineers can evolve from coders to AI orchestrators, mastering collaboration with AI tools while maintaining their unique human value in the development process."
+tags:
+- Artificial Intelligence
+- Business & Innovation
+- Development & DevOps
+- Opinion & Industry Analysis
+title: Coding Beyond AI
 ---
 
 In an era where AI agents are rapidly transforming the landscape of software development, many engineers find themselves at a crossroads. The question looming large is not whether AI will replace human coders, but how software engineers can evolve to stay relevant and indispensable. As AI takes over routine coding tasks with increasing efficiency, the role of the human engineer is shifting dramatically. This post explores the strategies and skills that will empower software engineers to not just coexist with AI, but to leverage it as a powerful tool in their professional arsenal, ensuring their continued value and success in this new technological paradigm.

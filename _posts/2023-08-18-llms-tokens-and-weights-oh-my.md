@@ -1,14 +1,20 @@
 ---
+author: Vatché
+category: ai
+date: 2023-08-18
+description: Demystifying how large language models work by exploring the fundamental
+  concepts of tokens, weights, and neural networks through accessible explanations
+  and musical analogies.
+img: posts/20230818/overwhelmed.jpg
 layout: post
 read_time: true
 show_date: true
-title: "LLMs, Tokens, and Weights! OH MY!"
-date: 2023-08-18
-img: posts/20230818/overwhelmed.jpg
-tags: [biases, llms, prompts, tokens, weights, artificial intelligence, machine learning]
-category: ai
-author: Vatché
-description: "Demystifying how large language models work by exploring the fundamental concepts of tokens, weights, and neural networks through accessible explanations and musical analogies."
+tags:
+- Artificial Intelligence
+- Data Science & Analytics
+- Privacy & Ethics
+- Technical Tutorials
+title: LLMs, Tokens, and Weights! OH MY!
 ---
 
 When I was a teenager I wanted to play the guitar, and on my birthday one summer I got a Fender DuoSonic, it was a cheap small guitar with barely enough frets to play anything on the higher notes. But that summer I played that guitar every single day for hours, listening and trying to play along with Metallica, Johnny Winter, B.B. King, Gary Moore, Black Sabbath and many more. When I went back to school I was playing on our school's music teacher's Gibson Nighthawk in his office/studio and he ran in, his hair all over the place and said "What? Who? When did you learn how to play the guitar?!"

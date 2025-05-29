@@ -1,13 +1,19 @@
 ---
+categories:
+- AI
+- Development
+- No-Code
+date: 2025-05-29
+description: A hands-on review of AI-powered vibe coding platforms—testing the promise
+  of building apps through conversation and revealing where they excel and fail.
+img: posts/20250529/vibe-coding.jpeg
 layout: post
 read_time: true
 show_date: true
-title: "Vibe Coding Platforms: The Promise vs. Reality of AI-Powered App Development"
-date: 2025-05-29
-img: posts/20250529/vibe-coding.jpeg
-categories: [AI, Development, No-Code]
-tags: [vibe-coding, ai-development, replit, builder-ai, no-code]
-description: A hands-on review of AI-powered vibe coding platforms—testing the promise of building apps through conversation and revealing where they excel and fail.
+tags:
+- Artificial Intelligence
+- Development & DevOps
+title: 'Vibe Coding Platforms: The Promise vs. Reality of AI-Powered App Development'
 ---
 
 One of the biggest barriers to developing applications has always been coding. If you have a brilliant idea but lack programming skills, you'd typically need to hire a developer or learn to code yourself. Enter "vibe coding" platforms—AI-powered tools that promise to build applications through natural conversation. But do they live up to the hype?

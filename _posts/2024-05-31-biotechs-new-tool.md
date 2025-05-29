@@ -1,14 +1,18 @@
 ---
+author: Vatché
+category: opinion
+date: 2024-05-31
+description: AI is revolutionizing biotechnology, transforming research and development
+  across multiple sectors. From drug discovery to personalized medicine, AI enhances
+  efficiency and accelerates innovation—but with important ethical considerations.
+img: posts/20240531/ai-biotech.jpeg
 layout: post
 read_time: true
 show_date: true
-title: "Biotech's new tool"
-date: 2024-05-31
-img: posts/20240531/ai-biotech.jpeg
-tags: [artificial intelligence, biotechnology, drug discovery, personalized medicine, ethics, gene therapy]
-category: opinion
-author: Vatché
-description: "AI is revolutionizing biotechnology, transforming research and development across multiple sectors. From drug discovery to personalized medicine, AI enhances efficiency and accelerates innovation—but with important ethical considerations."
+tags:
+- Artificial Intelligence
+- Emerging Technologies
+title: Biotech's new tool
 ---
 
 AI is revolutionizing biotechnology, transforming research and development across multiple sectors. Its applications span drug discovery, personalized medicine, agricultural biotech (we will talk about this in a different post), and environmental monitoring. This integration enhances efficiency, reduces costs, and accelerates innovation, particularly in drug development where timelines have been drastically shortened. These reasons are probably why Flagship Pioneering in Cambridge, MA launched Pioneering Intelligence in November of 2023.

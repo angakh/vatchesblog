@@ -1,14 +1,18 @@
 ---
+author: Vatché
+category: opinion
+date: 2024-12-30
+description: Model Context Protocols are the transit system that enables intelligence
+  to flow seamlessly between AI components. Here's how they work and why they matter
+  for complex AI systems.
+img: posts/20241230/wtfisthis.jpeg
 layout: post
 read_time: true
 show_date: true
-title: "MCP, what is it?"
-date: 2024-12-30
-img: posts/20241230/wtfisthis.jpeg
-tags: [artificial intelligence, MCP, model context protocols, AI infrastructure, system integration, DevOps]
-category: opinion
-author: Vatché
-description: "Model Context Protocols are the transit system that enables intelligence to flow seamlessly between AI components. Here's how they work and why they matter for complex AI systems."
+tags:
+- Artificial Intelligence
+- Development & DevOps
+title: MCP, what is it?
 ---
 
 The way we manage, structure, and transfer information between AI components has become just as critical as the models themselves. As AI systems grow increasingly complex—often involving multiple specialized models working in concert—there's a pressing need for sophisticated infrastructure to connect these components. This is where Model Context Protocols (MCPs) enter the picture, serving as the transit system that enables intelligence to flow seamlessly between different parts of an AI ecosystem, providing access to capabilities and information that were previously siloed or inaccessible.

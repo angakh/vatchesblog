@@ -1,14 +1,19 @@
 ---
+author: Vatché
+category: opinion
+date: 2025-05-02
+description: Just as typists were displaced not by better typists but by systems that
+  made typing a basic skill, coding may be following a similar transformation. Here's
+  what developers need to know.
+img: posts/20250502/typewriter-v-comp.jpeg
 layout: post
 read_time: true
 show_date: true
-title: "Are Coding Skills Following the Typist's Path?"
-date: 2025-05-02
-img: posts/20250502/typewriter-v-comp.jpeg
-tags: [artificial intelligence, coding, software development, AI automation, career evolution, future of work]
-category: opinion
-author: Vatché
-description: "Just as typists were displaced not by better typists but by systems that made typing a basic skill, coding may be following a similar transformation. Here's what developers need to know."
+tags:
+- Artificial Intelligence
+- Business & Innovation
+- Development & DevOps
+title: Are Coding Skills Following the Typist's Path?
 ---
 
 A friend of mine Harry Hoffman recently shared an article by Sangeet Paul Choudary titled "The many fallacies of 'AI won't take your job, but someone using AI will'". The article offers a thought-provoking analysis of how AI is transforming work. While the article covers multiple professions and systems, I'd like to focus on what this means specifically for software and web developers and how those professions are experiencing a transformation similar to what typists and other roles mentioned in the article faced.

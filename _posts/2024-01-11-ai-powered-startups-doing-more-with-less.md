@@ -1,14 +1,19 @@
 ---
+author: Vatché
+category: business
+date: 2024-01-11
+description: Exploring how modern AI tools enable startups to operate more efficiently
+  with smaller teams and budgets, while examining the real strategic value beyond
+  trendy applications.
+img: posts/20240111/ai-startups.jpeg
 layout: post
 read_time: true
 show_date: true
-title: "AI-Powered Startups: Doing More with Less"
-date: 2024-01-11
-img: posts/20240111/ai-startups.jpeg
-tags: [ai, opinion, startups, teams, entrepreneurship, innovation]
-category: business
-author: Vatché
-description: "Exploring how modern AI tools enable startups to operate more efficiently with smaller teams and budgets, while examining the real strategic value beyond trendy applications."
+tags:
+- Artificial Intelligence
+- Business & Innovation
+- Opinion & Industry Analysis
+title: 'AI-Powered Startups: Doing More with Less'
 ---
 
 Having worked at startups and starting my own over the last two decades, I have seen a lot. I think it is fair to say that things have really changed. Today's startups have a significant advantage over their predecessors through the use of artificial intelligence. By leveraging AI tools, modern startups can streamline operations, boost productivity, and achieve more with fewer resources. Here's how:

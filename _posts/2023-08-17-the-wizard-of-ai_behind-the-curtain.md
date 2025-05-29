@@ -1,14 +1,19 @@
 ---
+author: Vatché
+category: emerging-tech
+date: 2023-08-17
+description: Demystifying the mathematical foundations behind AI and large language
+  models - exploring vectors, embeddings, and the computational processes that power
+  modern AI systems.
+img: posts/20230817/Wizard-of-oz.jpg
 layout: post
 read_time: true
 show_date: true
-title: "The Wizard of AI – Behind the curtain"
-date: 2023-08-17
-img: posts/20230817/Wizard-of-oz.jpg
-tags: [ai, embedding, llms, vectors, weights, artificial intelligence, machine learning]
-category: emerging-tech
-author: Vatché
-description: "Demystifying the mathematical foundations behind AI and large language models - exploring vectors, embeddings, and the computational processes that power modern AI systems."
+tags:
+- Artificial Intelligence
+- Data Science & Analytics
+- Technical Tutorials
+title: The Wizard of AI – Behind the curtain
 ---
 
 Spoiler alert! In the Wizard of Oz, the audience and the protagonists of the story find out that the "Wizard" of Oz is an old man that hides behind a curtain speaking into a microphone. Who is the Wizard behind the curtain in AI? It is the math. A lot of the people that I engage with that have used AI tools have an adverse reaction to any statement that dismisses the wonder of AI and summarizes it with "it really comes down to math".
