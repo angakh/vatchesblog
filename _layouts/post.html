@@ -42,3 +42,55 @@ layout: default
   {% include search.html %}
   {% include footer.html %}
 </div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Add copy buttons to all code blocks
+    const codeBlocks = document.querySelectorAll('.highlight');
+    
+    codeBlocks.forEach(function(block) {
+        // Create copy button
+        const copyBtn = document.createElement('button');
+        copyBtn.className = 'copy-btn';
+        copyBtn.textContent = 'Copy';
+        copyBtn.onclick = function() { copyCode(this); };
+        
+        // Insert button into code block
+        block.insertBefore(copyBtn, block.firstChild);
+    });
+});
+
+function copyCode(btn) {
+    // Find the code content
+    const codeBlock = btn.nextElementSibling;
+    const code = codeBlock.textContent || codeBlock.innerText;
+    
+    // Copy to clipboard
+    navigator.clipboard.writeText(code).then(function() {
+        // Visual feedback
+        btn.textContent = 'Copied!';
+        btn.classList.add('copied');
+        
+        // Reset button after 2 seconds
+        setTimeout(function() {
+            btn.textContent = 'Copy';
+            btn.classList.remove('copied');
+        }, 2000);
+    }).catch(function(err) {
+        console.error('Failed to copy: ', err);
+        // Fallback for older browsers
+        const textArea = document.createElement('textarea');
+        textArea.value = code;
+        document.body.appendChild(textArea);
+        textArea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textArea);
+        
+        btn.textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(function() {
+            btn.textContent = 'Copy';
+            btn.classList.remove('copied');
+        }, 2000);
+    });
+}
+</script>

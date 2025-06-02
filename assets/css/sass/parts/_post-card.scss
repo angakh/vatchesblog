@@ -1,3 +1,4 @@
+/* = = = = = = = = = = Post-Card (homepage) = = = = = = = = = = */
 .post-card-box {
   margin: 50px 0 15px;
   padding: 0;
@@ -12,6 +13,7 @@
 
 .post-card {
   position: relative;
+  margin: 0px 5px 5px 0;
 }
 
 .post-card-image {
@@ -31,6 +33,7 @@
     right: 0;
     bottom: 0;
     background: rgba(255, 255, 255, .15);
+    -webkit-transition: all .5s;
     transition: all .5s;
   }
 }
@@ -51,11 +54,11 @@
   bottom: 5%;
   background-color: #00000099;
   padding-left: 5px;
-  width: 95%;
+  width: 95%
 }
 
 .post-card-tags {
-  font-size: 10px;
+  font-size: 10px
 }
 
 .tag {
@@ -66,7 +69,7 @@
 
   &:hover {
     text-decoration: underline;
-    color: $lighten-gray;
+    color: var(--grey4);
   }
 }
 
@@ -78,31 +81,18 @@
 
 .post-card-link {
   text-decoration: none;
-  font-family: 'Lato', sans-serif;
-  font-weight: 700;
+  font-family: var(--font2), sans-serif;
+  font-weight: var(--font2-bold);
   text-transform: uppercase;
   color: white;
 
   &:hover {
     opacity: .75;
-    color: $lighten-gray;
+    color: var(--grey4);
   }
 }
 
-.post-card-title {
-  font-family: 'Lato', sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 18px;
-  color: $white;
-  margin: 0 0 10px;
-
-  &:hover {
-    opacity: .8;
-  }
-}
-
-// Meta data styles
+/* = = = = post's read time and date (meta data) = = = = */
 .post-card-meta {
   font-size: .6em;
   white-space: nowrap;
@@ -112,4 +102,32 @@
   i {
     display: none;
   }
+}
+
+.recent-item-meta {
+  padding-left: 5px;
+  font-size: 8px;
+  display: block;
+
+  p {
+    margin-block-start: 0;
+    margin-block-end: 4px;
+  }
+}
+
+.meta-pre {
+  padding-left: 5px;
+  padding-right: 5px
+}
+
+.meta-sep::before {
+  content: "\07C";
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.page_meta {
+  display: flex;
+  color: var(--grey2);
+  font-size: .9em;
 }

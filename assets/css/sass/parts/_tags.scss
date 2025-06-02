@@ -1,65 +1,22 @@
-.blog-tags {
-  margin: 100px 0 100px;
-  h1 {
-    text-align: center;
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
-    font-size: 36px;
-    text-align: center;
-    margin: 0 0 30px;
-    color: $dark-purple;
-  }
-  .tags {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    li {
-      a {
-        display: inline-block;
-        color: $dark-purple;
-        &:hover {
-          opacity: .8;
-        }
-      }
-    }
-  }
-  .tag-list {
-    span {
-      a {
-        display: inline-block;
-        color: $dark-pink;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-size: 12px;
-        margin-bottom: 10px;
-        &:hover {
-          text-decoration: underline;
-          opacity: .8;
-        }
-      }
-    }
-    small {
-      color: $dark-purple;
-    }
-  }
+/* = = = = = = = = = = Tags = = = = = = = = = = */
+.center-tags .tag-cloud ul.tags {
+  display: flex;
+  justify-content: center;
+  align-items: center
 }
 
-.center-tags .tag-cloud ul.tags {
-    display: flex;
-    justify-content: center;
-    align-items: center
+div.tag-cloud {
+  margin-bottom: 1em;
 }
-div.tag-cloud{
-    margin-bottom: 1em;
-}
+
 .tags {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-}
-.tags li a {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+
+  li a {
     margin-right: 10px;
     margin-bottom: 10px;
     line-height: 20px;
@@ -73,8 +30,64 @@ div.tag-cloud{
     font-family: var(--font2);
     font-weight: var(--font2-regular);
     display: block;
-    text-transform: lowercase}
-.tags li a:hover {
-    background: var(--accent);
-    color: white !important;
-    text-decoration: none}
+    text-transform: lowercase;
+
+    &:hover {
+      background: var(--accent);
+      color: white !important;
+      text-decoration: none
+    }
+  }
+}
+
+.blog-tags {
+  margin: 100px 0 100px;
+
+  h1 {
+    text-align: center;
+    font-family: var(--font2), sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    margin: 0 0 30px;
+    color: var(--accent-dark);
+  }
+
+  .tags {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      a {
+        display: inline-block;
+        color: var(--accent-dark);
+
+        &:hover {
+          opacity: .8;
+        }
+      }
+    }
+  }
+
+  .tag-list {
+    span {
+      a {
+        display: inline-block;
+        color: var(--accent);
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 12px;
+        margin-bottom: 10px;
+
+        &:hover {
+          text-decoration: underline;
+          opacity: .8;
+        }
+      }
+    }
+
+    small {
+      color: var(--accent-dark);
+    }
+  }
+}

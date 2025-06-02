@@ -1,31 +1,58 @@
+/* = = = = = = = = = = Animations  = = = = = = = = = = */
 .main-header,
 .page-image,
 .page-content,
+.pagination,
 .about-container,
-.post-card-box {
+.post-card-box,
+.blog-tags,
+.github-button,
+.tag-master,
+.tag-cloud,
+.toc,
+.sidebar,
+.pnf-image,
+.page_meta {
+  -webkit-animation-duration: 0.7s;
   animation-duration: 0.7s;
+  -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
 }
 
 .main-header,
 .page-image {
+  -webkit-animation-delay: 0.5s;
   animation-delay: 0.5s;
 }
 
 .page-content,
+.pagination,
+.tag-master,
+.tag-cloud,
+.blog-tags,
+.page_meta,
+.toc,
+.github-button,
+.sidebar,
 .about-container,
+.pnf-image,
 .post-card-box {
+  -webkit-animation-delay: 0.75s;
   animation-delay: 0.75s;
 }
 
 @-webkit-keyframes fadeInDown {
   from {
     opacity: 0;
+    -webkit-transform: translateY(-20px);
     transform: translateY(-20px);
   }
+
   to {
     opacity: 1;
+    -webkit-transform: translateY(0);
     transform: translateY(0);
   }
 }
@@ -33,10 +60,13 @@
 @keyframes fadeInDown {
   from {
     opacity: 0;
+    -webkit-transform: translateY(-20px);
     transform: translateY(-20px);
   }
+
   to {
     opacity: 1;
+    -webkit-transform: translateY(0);
     transform: translateY(0);
   }
 }
