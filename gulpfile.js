@@ -1,68 +1,156 @@
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var prefix = require('gulp-autoprefixer');
-var imagemin = require('gulp-imagemin');
-var pngquant = require('imagemin-pngquant');
-var cache = require('gulp-cache');
-var cp = require('child_process');
-var browserSync = require('browser-sync');
+const { src, dest, watch, series, parallel } = require('gulp');
+const sass = require('gulp-sass')(require('sass'));
+const autoprefixer = require('gulp-autoprefixer');
+const imagemin = require('gulp-imagemin');
+const cache = require('gulp-cache');
+const { spawn } = require('child_process');
+const browserSync = require('browser-sync').create();
+const sourcemaps = require('gulp-sourcemaps');
 
-var jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
+// Determine if we're in production mode
+const isProduction = process.env.NODE_ENV === 'production';
 
 // Build the Jekyll Site
-gulp.task('jekyll-build', function (done) {
-    return cp.spawn( jekyll , ['build'], {stdio: 'inherit'})
-        .on('close', done);
-});
+function jekyllBuild(done) {
+    const { exec } = require('child_process');
+    const command = 'bundle exec jekyll build';
+    
+    exec(command, (error, stdout, stderr) => {
+        if (error) {
+            console.error(`Jekyll build error: ${error}`);
+            return done(error);
+        }
+        if (stdout) console.log(stdout);
+        if (stderr) console.error(stderr);
+        done();
+    });
+}
 
-// Rebuild Jekyll and page reload
-gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
-    browserSync.reload();
-});
+// Compile SCSS files
+function compileSass() {
+    let stream = src('assets/css/sass/main.scss');
+    
+    if (!isProduction) {
+        stream = stream.pipe(sourcemaps.init());
+    }
+    
+    stream = stream
+        .pipe(sass({
+            outputStyle: isProduction ? 'compressed' : 'expanded',
+            // Add includePaths so SCSS can find imported files
+            includePaths: [
+                'assets/css/sass',           // Main SCSS directory
+                'assets/css/sass/parts',     // If you have a parts subdirectory
+                'node_modules'               // For any npm-installed SCSS packages
+            ]
+        }).on('error', sass.logError))
+        .pipe(autoprefixer({
+            overrideBrowserslist: ['last 2 versions', '> 1%'],
+            cascade: true
+        }));
+    
+    if (!isProduction) {
+        stream = stream.pipe(sourcemaps.write('./'));
+    }
+    
+    return stream
+        .pipe(dest('_site/assets/css'))
+        .pipe(dest('assets/css'))
+        .pipe(browserSync.stream());
+}
 
-// Wait for jekyll-build, then launch the Server
-gulp.task('browser-sync', ['sass', 'img', 'jekyll-build'], function() {
-    browserSync({
+// Optimize images
+function optimizeImages() {
+    return src('assets/img/**/*')
+        .pipe(cache(imagemin([
+            imagemin.gifsicle({ interlaced: true }),
+            imagemin.mozjpeg({ quality: 80, progressive: true }),
+            imagemin.optipng({ optimizationLevel: 5 }),
+            imagemin.svgo({
+                plugins: [
+                    { name: 'removeViewBox', active: false },
+                    { name: 'cleanupIDs', active: false }
+                ]
+            })
+        ])))
+        .pipe(dest('assets/img'))
+        .pipe(dest('_site/assets/img'))
+        .pipe(browserSync.stream());
+}
+
+// Start browser sync server
+function startServer(done) {
+    browserSync.init({
         server: {
             baseDir: '_site'
         },
-        notify: false
+        notify: false,
+        open: false
     });
-});
+    done();
+}
 
-// Compile files
-gulp.task('sass', function () {
-    return gulp.src('assets/css/sass/main.scss')
-        .pipe(sass({
-            outputStyle: 'expanded',
-            onError: browserSync.notify
-        }))
-        .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
-        .pipe(gulp.dest('_site/assets/css'))
-        .pipe(browserSync.reload({stream:true}))
-        .pipe(gulp.dest('assets/css'));
-});
+// Reload browser
+function reloadBrowser(done) {
+    browserSync.reload();
+    done();
+}
 
-// Compression images
-gulp.task('img', function() {
-	return gulp.src('assets/img/**/*')
-		.pipe(cache(imagemin({
-			interlaced: true,
-			progressive: true,
-			svgoPlugins: [{removeViewBox: false}],
-			use: [pngquant()]
-		})))
-    .pipe(gulp.dest('_site/assets/img'))
-    .pipe(browserSync.reload({stream:true}));
-});
+// Watch files for changes
+function watchFiles() {
+    // Watch ALL SCSS files, not just main.scss
+    watch('assets/css/sass/**/*.scss', compileSass);
+    watch(['assets/img/**/*', '!assets/img/**/*.{jpg,jpeg,png,gif,svg}'], optimizeImages);
+    watch([
+        '*.html',
+        '_layouts/*.html',
+        '_includes/*.html',
+        '_pages/*.html',
+        '_posts/*',
+        '_data/**/*',
+        'assets/js/**/*.js'
+    ], series(jekyllBuild, reloadBrowser));
+}
 
-// Watch scss, html, img files
-gulp.task('watch', function () {
-    gulp.watch('assets/css/sass/**/*.scss', ['sass']);
-    gulp.watch('assets/js/**/*.js', ['jekyll-rebuild']);
-    gulp.watch('assets/img/**/*', ['img']);
-    gulp.watch(['*.html', '_layouts/*.html', '_includes/*.html', '_pages/*.html', '_posts/*'], ['jekyll-rebuild']);
-});
+// Clear cache
+function clearCache(done) {
+    return cache.clearAll(done);
+}
 
-//  Default task
-gulp.task('default', ['browser-sync', 'watch']);
+// Build task
+const build = series(
+    parallel(compileSass, optimizeImages),
+    jekyllBuild
+);
+
+// Development task
+const dev = series(
+    build,
+    startServer,
+    watchFiles
+);
+
+// Production build
+const production = series(
+    clearCache,
+    parallel(compileSass, optimizeImages),
+    jekyllBuild
+);
+
+// CI build (for GitHub Actions)
+const ciBuild = series(
+    clearCache,
+    parallel(compileSass, optimizeImages)
+);
+
+// Export tasks
+exports.sass = compileSass;
+exports.images = optimizeImages;
+exports.jekyll = jekyllBuild;
+exports.clear = clearCache;
+exports.build = build;
+exports.serve = dev;
+exports.watch = watchFiles;
+exports.production = production;
+exports.ci = ciBuild;
+exports.default = dev;

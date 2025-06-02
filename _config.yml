@@ -74,15 +74,11 @@ compress_html:
   comments: all
   startings: [html, head, body]
 
-# Outputting
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-
-category_archive:
-  type: liquid
-  path: /categories/
-
+# Sass processing
 sass:
   style: compressed
+  sass_dir: assets/css/sass
+  sourcemap: never
 
 plugins:
   - jekyll-paginate
