@@ -38,21 +38,7 @@ This represents the "evolution" approach to AI integration—taking what works a
 
 Both Augment and CoPilot require network bandwidth for cloud based AI processing, which can introduce latency that affects typing responsiveness. For enterprise development, consider that your code is being sent to external servers, which may raise privacy and security concerns depending on your organization's requirements.
 
-## Kiro
 
-Kiro is very similar to Cursor in the sense that you install, you import from VS Code (if you want) and it is ready to go. It has a cool splash page when you launch the IDE where you can Vibe or Spec. Vibe is for when you have a particular task you want to accomplish or you want to prototype something. Spec is when you use natural language to plan out what you are trying to do, ideate and then build. This is similar to how replit and lovable approach coding. It is a robust IDE but feels lightweight. But its ability to understand your codebase is not 100% there. For example I asked it to review the code for ieps.ai and provide me with some insight into what my application does. It broke everything down to the best of its ability but it totally missed an entire layer of complexity. I am using S3 buckets for storage and it assumed that everything was stored locally. It also missed lambda function calls and conversational agents. 
-
-This really surprised me because I am a huge fan of Claude Code and when it comes to the LLM behind Kiro and Claude Code, they are using the same underlying LLM!
-
-But Kiro has something that I have not really seen in the other IDEs. Agent Hooks, Agent Steering and MCP Servers are available out of the box. You need to connect, but the capability is right there. These additional features can allow for customization on a level that I have not seen yet. 
-
-### Amazon's Entry into AI Powered Development
-
-As Amazon's entry into the AI IDE space, Kiro brings some interesting innovations but also reveals the challenges of building truly context aware development environments. The **Vibe and Spec modes** represent a thoughtful approach to different development workflows. For example if you are in Vibe mode you can quickly prototyping or work on a specific task. In Spec mode you can plan and setup some guidelines prior to starting development. In previous posts regarding vibe coding I have covered how important this is.
-
-### Context Limitations and Learning Curve
-
-This really highlights a common challenge across AI powered IDEs. The fact that it missed critical infrastructure components like S3 buckets and Lambda functions means it has a hard time decyphering modern distributed architectures. This emphasizes the importance of maintaining your understanding of what the AI is doing rather than blindly trusting its analysis. If a junior developer asked Kiro what this app was doing, they might try to implement something that is already there, screwing up more of the code and then trying to figure out what went wrong. 
 
 ## Cursor
 
@@ -74,6 +60,22 @@ Cursor represents the "revolution" approach, designed from the ground up with AI
 ### The Modern Developer Experience
 
 Cursor feels like what an IDE should be in 2024, with a clean, modern interface that doesn't feel cluttered with legacy features. The **visual diff interface** shows exactly what the AI wants to change before you accept it, and the **intelligent code editing** can modify existing code based on natural language instructions. However, as noted, the smaller ecosystem and potential for AI generated errors means you need to stay vigilant about code quality. New files/code have to be reviewed thoroughly before committing to a repo, you don't want to be that guy. 
+
+## Kiro
+
+Kiro is very similar to Cursor in the sense that you install, you import from VS Code (if you want) and it is ready to go. It has a cool splash page when you launch the IDE where you can Vibe or Spec. Vibe is for when you have a particular task you want to accomplish or you want to prototype something. Spec is when you use natural language to plan out what you are trying to do, ideate and then build. This is similar to how replit and lovable approach coding. It is a robust IDE but feels lightweight. But its ability to understand your codebase is not 100% there. For example I asked it to review the code for ieps.ai and provide me with some insight into what my application does. It broke everything down to the best of its ability but it totally missed an entire layer of complexity. I am using S3 buckets for storage and it assumed that everything was stored locally. It also missed lambda function calls and conversational agents. 
+
+This really surprised me because I am a huge fan of Claude Code and when it comes to the LLM behind Kiro and Claude Code, they are using the same underlying LLM!
+
+But Kiro has something that I have not really seen in the other IDEs. Agent Hooks, Agent Steering and MCP Servers are available out of the box. You need to connect, but the capability is right there. These additional features can allow for customization on a level that I have not seen yet. 
+
+### Amazon's Entry into AI Powered Development
+
+As Amazon's entry into the AI IDE space, Kiro brings some interesting innovations but also reveals the challenges of building truly context aware development environments. The **Vibe and Spec modes** represent a thoughtful approach to different development workflows. For example if you are in Vibe mode you can quickly prototyping or work on a specific task. In Spec mode you can plan and setup some guidelines prior to starting development. In previous posts regarding vibe coding I have covered how important this is.
+
+### Context Limitations and Learning Curve
+
+This really highlights a common challenge across AI powered IDEs. The fact that it missed critical infrastructure components like S3 buckets and Lambda functions means it has a hard time decyphering modern distributed architectures. This emphasizes the importance of maintaining your understanding of what the AI is doing rather than blindly trusting its analysis. If a junior developer asked Kiro what this app was doing, they might try to implement something that is already there, screwing up more of the code and then trying to figure out what went wrong. 
 
 ## Claude Code (not an IDE)
 
