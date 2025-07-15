@@ -15,8 +15,6 @@ tags:
 title: 'Battle of the IDEs!'
 ---
 
-# Battle of the IDEs!
-
 When ChatGPT first came out, one of the first things I did with it was ask it to write me code. This was two years ago and a lot has changed. First it was extensions in VS Code, then it was good extensions in VS Code, then it was github, Cursor, and now Kiro. We are going to cover my impressions of these tools in this article but before we do, I'd like to suggest something for new and junior developers. These tools can accelerate what you do, but you understanding what they do, why it is good, why it is not so good, if it is secure or if the code is highly exploitable...is very important. This comes with experience, but that should not stop you from using these tools. Instead I would recommend that when you are working on something, to ask the assistant to explain it to you. Or maybe try writing it yourself first and then see what changes it makes, ask it why it made those changes. Stay curious.
 
 The tools that I have tested are as follows:
