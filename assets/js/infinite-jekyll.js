@@ -1,40 +1,36 @@
 $(function() {
   'use strict';
   
-  var postURLs,
+  var currentPage = 1,
       isFetchingPosts = false,
-      shouldFetchPosts = true;
-  
-  // Load the JSON file containing all URLs
-  const queryString = window.location.search;
-  const urlParams = new URLSearchParams(queryString);
-  
-  // If a tag was passed as a url parameter then use it to filter the urls
-  if (urlParams.has('tag')){
-    const tag = urlParams.get('tag');
-    document.getElementById(tag).classList.toggle('hidden');
-    $.getJSON('./posts-by-tag.json', function(data) {
-        let tag_item = data.find(el => el.tag === tag);
-        postURLs = tag_item["posts"];
-        // If there aren't any more posts available to load than already visible, disable fetching
-        if (postURLs.length <= postsToLoad)
-        disableFetching();
-    });
-  } else {
-      $.getJSON('./all-posts.json', function(data) {
-        postURLs = data["posts"];
-        // If there aren't any more posts available to load than already visible, disable fetching
-        if (postURLs.length <= postsToLoad)
-          disableFetching();
-      });
-  }
+      shouldFetchPosts = true,
+      isHomePage = $(".post-card-box").length > 0;
 
-  var postsToLoad = $(".tag-master:not(.hidden) .post-list").children().length,
-      loadNewPostsThreshold = 10;
+  // Support both .post-list (tags page) and .post-card-box (home page)
+  var postContainer = $(".tag-master:not(.hidden) .post-list").length > 0 
+                      ? $(".tag-master:not(.hidden) .post-list") 
+                      : $(".post-card-box");
+  var loadNewPostsThreshold = 300;
 
   // If there's no spinner, it's not a page where posts should be fetched
   if ($(".spinner").length < 1)
     shouldFetchPosts = false;
+  
+  // Function to check if we need more posts to fill the viewport
+  function checkAndLoadMore() {
+    if (!shouldFetchPosts || isFetchingPosts) return;
+    
+    var windowHeight = $(window).height();
+    var documentHeight = $(document).height();
+    
+    // If the document is shorter than the window, load more posts
+    if (documentHeight <= windowHeight + loadNewPostsThreshold) {
+      fetchPosts();
+    }
+  }
+  
+  // Check on initial load
+  setTimeout(checkAndLoadMore, 100);
 	
   // Are we close to the end of the page? If we are, load more posts
   $(window).scroll(function(e){
@@ -51,42 +47,47 @@ $(function() {
     }
   });
   
-  // Fetch a chunk of posts
+  // Fetch a chunk of posts from the next paginated page
   function fetchPosts() {
-    // Exit if postURLs haven't been loaded
-    if (!postURLs) return;
+    if (isFetchingPosts) return;
     
     isFetchingPosts = true;
+    currentPage++;
     
-    // Load as many posts as there were present on the page when it loaded
-    // After successfully loading a post, load the next one
-    var loadedPosts = 0,
-        postCount = $(".tag-master:not(.hidden) .post-list").children().length,
-        callback = function() {
-          loadedPosts++;
-          var postIndex = postCount + loadedPosts;
-          
-          if (postIndex > postURLs.length-1) {
-            disableFetching();
-            return;
-          }
-          
-          if (loadedPosts < postsToLoad) {
-            fetchPostWithIndex(postIndex, callback);
-          } else {
-            isFetchingPosts = false;
-          }
-        };
-		
-    fetchPostWithIndex(postCount + loadedPosts, callback);
-  }
-	
-  function fetchPostWithIndex(index, callback) {
-    var postURL = postURLs[index];
-		
-    $.get(postURL, function(data) {
-      $(data).find(".post").appendTo(".tag-master:not(.hidden) .post-list");
-      callback();
+    // Construct the URL for the next page
+    var nextPageURL = currentPage === 2 ? './page2/' : './page' + currentPage + '/';
+    
+    $.get(nextPageURL, function(data) {
+      var html = $(data);
+      
+      if (isHomePage) {
+        // For home page: extract post cards
+        var newPosts = html.find('.post-card-box li');
+        
+        if (newPosts.length > 0) {
+          newPosts.appendTo('.post-card-box');
+          isFetchingPosts = false;
+          // Check if we need to load more to fill the viewport
+          setTimeout(checkAndLoadMore, 100);
+        } else {
+          // No more posts to load
+          disableFetching();
+        }
+      } else {
+        // For tag pages: use original logic
+        var newPosts = html.find('.post');
+        
+        if (newPosts.length > 0) {
+          newPosts.appendTo('.tag-master:not(.hidden) .post-list');
+          isFetchingPosts = false;
+          setTimeout(checkAndLoadMore, 100);
+        } else {
+          disableFetching();
+        }
+      }
+    }).fail(function() {
+      // Failed to load page (probably no more pages)
+      disableFetching();
     });
   }
   
