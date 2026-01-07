@@ -417,7 +417,7 @@ After implementing a suite of skills, you'll notice:
 3. **Better AI Collaboration** - Claude can execute complex workflows autonomously
 4. **Documentation in Code** - Your skills become living documentation of how things should be done
 
-The Boris Cherny workflow I detailed in my [multi-agent article](/posts/boris-multi-agent-workflow) relies heavily on well-designed skills. His team uses them dozens of times per day, and they're a key reason multiple Claude agents can work effectively in parallel.
+The Boris Cherny workflow I detailed in my [multi-agent article](/orchestrating-agents-claude.html) relies heavily on well-designed skills. His team uses them dozens of times per day, and they're a key reason multiple Claude agents can work effectively in parallel.
 
 ## Getting Started Today
 
@@ -435,6 +435,5 @@ The time investment is minimal (10-15 minutes per skill), but the compounding re
 
 ---
 
-<!-- **Related Reading:**
-- [The Multi-Agent Approach: How Claude Code's Creator Uses the Tool](/posts/boris-multi-agent-workflow)
-- [Vibe Coding Platforms: Promise vs. Reality](/posts/vibe-coding-platforms) -->
+**Related Reading:**
+- [The Multi-Agent Approach: How Claude Code's Creator Uses the Tool](/orchestrating-agents-claude.html)

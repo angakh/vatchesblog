@@ -17,9 +17,12 @@ tags:
 title: 'The Multi-Agent Approach: How Claude Code''s Creator Actually Uses the Tool'
 ---
 
-When Boris Cherny, the creator of Claude Code, shared his personal workflow, it revealed something fascinating: the most powerful way to use AI coding assistants isn't to replace your terminal with a single chatbot. Instead, it's about orchestrating multiple AI agents working in parallel, each on their own task, while you context-switch between them like a conductor managing an orchestra.
+When Boris Cherny, the creator of Claude Code, shared his personal workflow, it revealed something fascinating: the most powerful way to use AI coding assistants isn't to replace your terminal with a single chatbot. Instead, it's about orchestrating multiple AI agents working in parallel, each on their own task, while you 
+context-switch between them like a conductor managing an orchestra.
 
-After months of testing various AI coding platforms (as I detailed in my [vibe coding review](/posts/vibe-coding-platforms)), I've come to appreciate that the implementation details matter as much as the underlying AI model. Boris's approach represents a fundamentally different philosophy from the "conversational app builder" platforms I tested. His focus is on production workflows rather than rapid prototyping.
+[Boris Cherny's Post on X](https://x.com/bcherny/status/2007179832300581177)
+
+After months of testing various AI coding platforms (as I detailed in my [vibe coding review](/vibe-coding-reviews.html)), I've come to appreciate that the implementation details matter as much as the underlying AI model. Boris's approach represents a fundamentally different philosophy from the "conversational app builder" platforms I tested. His focus is on production workflows rather than rapid prototyping.
 
 ## The Parallel Processing Paradigm
 
@@ -109,7 +112,9 @@ The time investment in planning pays off exponentially. A good plan lets Claude 
 
 ## Slash Commands: Automating Inner Loops
 
-Slash commands save you from repeated prompting and make it possible for Claude to use your workflows too. Boris creates custom slash commands for every "inner loop" workflow that he does many times a day. This can get confusing so before you start to worry here is the breakdown: slash commands are how skills are employed when using Claude Code.
+Slash commands save you from repeated prompting and make it possible for Claude to use your workflows too. Boris creates custom slash commands for every "inner loop" workflow that he does many times a day. What Boris is referring to as "slash commands" are actually what Claude Code calls "skills."
+
+If you don't know how to create skills, check out my [guide](/claude-code-skills-guide.html).
 
 **What are inner loop workflows?**
 
@@ -662,7 +667,7 @@ The developers who will thrive aren't those who can prompt the hardest, but thos
 - Manage parallel workstreams effectively
 - Integrate AI into existing tool ecosystems
 
-This echoes my conclusion from [Coding Beyond AI](/posts/coding-beyond-ai): the future belongs to those who can architect, direct, and orchestrate AI tools, not those who simply use them as fancy autocomplete.
+This echoes my conclusion from [Coding Beyond AI](/coding-beyond-ai.html): the future belongs to those who can architect, direct, and orchestrate AI tools, not those who simply use them as fancy autocomplete.
 
 ## Getting Started: Your Path to Multi-Agent Development
 
@@ -968,6 +973,5 @@ Start small. Pick one or two practices from this article and implement them this
 *Have you experimented with multi-agent workflows? Share your experiences in the comments below, or reach out to me on [LinkedIn](https://linkedin.com/in/chamlian/) to discuss your AI development strategies.*
 
 **Related Reading:**
-- [Vibe Coding Platforms: Promise vs. Reality](/posts/vibe-coding-platforms)
-- [Coding Beyond AI](/posts/coding-beyond-ai)
-- [Are Coding Skills Following the Typists Path](/posts/are-coding-skills-following-typists-path)
+- [Creating Custom Skills in Claude Code](/claude-code-skills-guide.html)
+- [Coding Beyond AI](/coding-beyond-ai.html)
