@@ -363,7 +363,7 @@ Create or edit `.claude/settings.json` in your project:
 This configuration does several things:
 - **matcher**: Triggers only when Claude writes or edits files (not when reading)
 - **command**: Runs your code formatter
-- **|| true**: Ensures the hook doesn't fail if formatting has warnings
+- **\|\| true**: Ensures the hook doesn't fail if formatting has warnings
 
 If you're using Bun (like the Claude Code team), it would look like:
 ```json
