@@ -273,7 +273,9 @@ Create a file `.claude/agents/code-simplifier.md`:
 ```markdown
 # Code Simplifier Agent
 
-You are a specialist in code simplification and refactoring. Your job is to take working code and make it more maintainable without changing behavior.
+You are a specialist in code simplification and refactoring.
+Your job is to take working code and make it more maintainable 
+without changing behavior.
 
 ## Your responsibilities:
 1. Remove duplicate code
