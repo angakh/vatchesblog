@@ -435,5 +435,9 @@ The time investment is minimal (10-15 minutes per skill), but the compounding re
 
 ---
 
+**My Claude Code Skills Repo to get you started:**
+If you want to give this a shot, I created a repo with a few skills I use daily. You can fork it and add it to your project. As always let me know what you think.
+- [https://github.com/angakh/claude-code-skills](https://github.com/angakh/claude-code-skills)
+
 **Related Reading:**
 - [The Multi-Agent Approach: How Claude Code's Creator Uses the Tool](/orchestrating-agents-claude.html)

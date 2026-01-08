@@ -974,6 +974,9 @@ Start small. Pick one or two practices from this article and implement them this
 
 *Have you experimented with multi-agent workflows? Share your experiences in the comments below, or reach out to me on [LinkedIn](https://linkedin.com/in/chamlian/) to discuss your AI development strategies.*
 
+**My Claude Code Skills Repo to get you started:**
+- [https://github.com/angakh/claude-code-skills](https://github.com/angakh/claude-code-skills)
+
 **Related Reading:**
 - [Creating Custom Skills in Claude Code](/claude-code-skills-guide.html)
 - [Coding Beyond AI](/coding-beyond-ai.html)
