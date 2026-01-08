@@ -43,7 +43,7 @@ The mobile workflow is particularly clever: start a few complex tasks from your 
 
 ## The CLAUDE.md Strategy: Team Knowledge Management
 
-One of the most underappreciated features Boris highlights is the shared `CLAUDE.md` file—a repository-level instruction set that the entire team maintains and Claude reads before every interaction.
+One of the most underappreciated features Boris highlights is the shared `CLAUDE.md` file, which is a repository-level instruction set that the entire team maintains and Claude reads before every interaction.
 
 ### How It Works
 
