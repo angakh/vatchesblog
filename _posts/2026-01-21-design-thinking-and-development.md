@@ -6,7 +6,7 @@ categories:
 - Product Management
 - Design Thinking
 date: 2026-01-21
-description: A deep dive into the intersection of design thinking and vibe coding, exploring how product management and user-centered design can reign in the chaos of AI-powered development workflows.
+description: A deep dive into the intersection of design thinking and software development, exploring how product management and user-centered design improve outcomes whether you're using AI tools or writing code by hand.
 img: posts/20260121/rose-thorn-bud.jpeg
 layout: post
 read_time: true
@@ -16,32 +16,35 @@ tags:
 - Development & DevOps
 - Artificial Intelligence
 - Workflow Optimization
-title: 'Design Thinking and Vibe Coding: A Match Made in Product Management Heaven'
+- Product Management
+title: 'Design Thinking and Software Development: Why Product Management Skills Matter More Than Ever'
 ---
 
-# From Sticky Notes to AI: Why Product Management Matters More Than Ever in the Age of Vibe Coding
+# Why Product Management Matters
 
 I remember sitting in a conference room years ago, surrounded by product managers, developers, and designers. We were three sprints into a project and nobody could agree on what "done" actually meant. The requirements document was 47 pages long. The developers were building features that nobody asked for. The designers were frustrated. And the client? They just wanted something that solved their problem.
 
-That project taught me something that I carry with me to this day: the quality of your input determines the quality of your output. Back then, we were talking about requirements documents and user stories. Today, we are talking about prompts and AI-generated code. But the fundamental truth remains the same.
+That project taught me something that I carry with me to this day: the quality of your input determines the quality of your output. Back then, we were talking about requirements documents and user stories. Today, we might be talking about prompts and AI-generated code. But the fundamental truth remains the same whether you are writing every line by hand or letting AI handle the typing.
 
-Here is the thing nobody is saying out loud: AI can write code faster than any human. But it cannot tell you what code to write. It cannot interview your users. It cannot synthesize conflicting feedback into a coherent product vision. It cannot decide which problem is worth solving first.
+Here is the thing: tools change, but the hard problem stays the same. You can mass produce code faster than ever, but that does not help if you are building the wrong thing. You cannot interview your users with a keyboard shortcut. You cannot synthesize conflicting feedback into a coherent product vision with a CLI command. You cannot decide which problem is worth solving first by asking an LLM.
 
-That is product management. And in a world where code is increasingly commoditized, the ability to define what gets built clearly, precisely, testably, is the skill that matters most.
+That is product management. And in a world where writing code is getting easier every year, the ability to define what gets built clearly, precisely, testably, is the skill that matters most.
 
-## Vibe Coding
+## The Problem Is Not New, But It Is Getting Louder
 
-Y Combinator reported that 25% of startups in their Winter 2025 batch had codebases that were 95% AI-generated. That is not a typo. Ninety-five percent.
+Y Combinator reported that 25% of startups in their Winter 2025 batch had codebases that were 95% AI-generated. That statistic makes a lot of people nervous about the future of software development. But here is what it actually reveals: the bottleneck was never typing speed.
 
-The developers getting the best results from these tools are not the ones with the fanciest prompts. They are the ones who actually understand what they are trying to build before they start typing.
+The developers getting the best results, whether they are using AI tools or not, are the ones who actually understand what they are trying to build before they start.
 
 In May 2025, a Swedish vibe coding app called Lovable was found to have security vulnerabilities in 170 out of 1,645 web applications it helped create. The code looked fine, it ran fine, but it was fundamentally broken because nobody stopped to ask the right questions first.
+
+That is not an AI problem. That is a requirements problem. And requirements problems have been shipping broken software since long before anyone heard of large language models.
 
 ## Enter Design Thinking (Yes, the Sticky Note People)
 
 I know what you are thinking. "Design thinking? That is for UX designers and people who like whiteboards."
 
-The LUMA Institute has been teaching human-centered design for years. Their framework breaks down into three core skills: Looking, Understanding, and Making (A for aligning or adapting depending on who you ask). It is not complicated, but it is powerful, and it is exactly what vibe coding is missing.
+The LUMA Institute has been teaching human-centered design for years. Their framework breaks down into three core skills: Looking, Understanding, and Making (A for aligning or adapting depending on who you ask). It is not complicated, but it is powerful, and it is exactly what most development processes are missing.
 
 **Looking** is about observing human experience. Who are your users? What are they actually trying to accomplish? What frustrates them?
 
@@ -49,7 +52,7 @@ The LUMA Institute has been teaching human-centered design for years. Their fram
 
 **Making** is about envisioning future possibilities. What does success look like? How will you know when you get there?
 
-Sound familiar? It should. These are the exact questions you need to answer before you write a single prompt.
+Sound familiar? It should. These are the exact questions you need to answer before you write a single line of code, regardless of how that code gets written.
 
 ## From Observations to User Stories: The Methods That Actually Work
 
@@ -113,6 +116,8 @@ Taking our expense app thorns and buds:
 | Multi-user expense sharing | Medium | High | Time Sink? |
 | Smart reminders to log expenses | High | Low | Quick Win |
 
+![Importance/Difficulty Matrix](./assets/img/posts/20260121/design-thinking-example-importance-difficulty-matrix.png)
+
 Look at that. Four quick wins jumped out immediately. Those become your first sprint. The multi-user sharing might seem cool, but the effort-to-value ratio is terrible right now. Maybe later, once you have nailed the core experience.
 
 ### Affinity Clustering: Finding the Patterns You Missed
@@ -137,15 +142,15 @@ For our expense app, Affinity Clustering might reveal that three seemingly unrel
 - "Can't remember what this $47.32 charge was for"
 
 Take the time to really dig into the root cause and why it matters when you try to title the cluster. Users lose the context needed to accurately log expenses as time passes.
-Cluster name: **Context Decay: delays in reporting expenses lead to poor reporting, gaps in actual finances, and frustration from those filing/processing the expenses** vs **Context Decay**.
+Cluster name: **"Context Decay: delays in reporting expenses lead to poor reporting, gaps in actual finances, and frustration from those filing/processing the expenses"** vs **"Context Decay"**.
 
 Now instead of three separate features, you have one user story that addresses the root cause:
 
 > As a small business owner, I want to log expenses immediately after purchase with minimal friction so that I capture accurate details before I forget them.
 
-That is a much better prompt foundation than "make categorizing easier."
+That is a much better foundation than "make categorizing easier," whether you are writing the code yourself or handing it off to an AI tool.
 
-## The User Story: Your Prompt's Smarter Older Sibling
+## The User Story: Clarity That Scales
 
 User stories have been around since the early days of Agile. The format is simple:
 
@@ -164,7 +169,7 @@ This is where the INVEST criteria comes in. Good user stories should be:
 - **Small**: Completable in a reasonable timeframe
 - **Testable**: You can verify when it is done
 
-Now look at those criteria again and think about AI prompts. How many times have you given an AI tool a vague request and gotten back something that technically worked but completely missed the point? That is what happens when your prompt is not Independent, Negotiable, Valuable, Estimable, Small, and Testable.
+These criteria matter whether you are handing the story to a junior developer, a senior architect, or an AI coding assistant. Vague input produces vague output, while clear input produces clear output. The tool does not change the equation.
 
 ## Acceptance Criteria: The Bridge Between "What" and "Done"
 
@@ -179,7 +184,7 @@ For example:
 - When they click "Save List"
 - Then their grocery items should persist across sessions
 
-This is not just documentation, this is a testing specification, and this is where vibe coding gets some guardrails.
+This is not just documentation, this is a testing specification. And whether you are writing tests by hand, using TDD, or letting AI generate your test suite, acceptance criteria tell you what "correct" actually means.
 
 ## Putting It All Together: From Sticky Notes to Shipping Code
 
@@ -198,7 +203,7 @@ You interview users and observe their behavior. You collect observations and sor
 
 You notice the thorns cluster around a theme: users lose context over time. The bud suggests users want intelligence, not just data entry.
 
-Cluster: **Context Decay and Cognitive Load**
+Cluster: **Context Decay and Cognitive Load: delays in reporting expenses lead to poor reporting, gaps in actual finances, and frustration from those filing/processing the expenses**
 
 The real problem is not the interface. It is that expense tracking requires too much mental effort at the wrong time.
 
@@ -232,9 +237,9 @@ Based on your analysis, you write:
 > **When** they encounter the same merchant again
 > **Then** the system should learn from the correction and suggest the new category
 
-**Step 6: Writing the Prompt**
+**Step 6: Building**
 
-Now your AI prompt practically writes itself:
+At this point, you have everything you need to build the feature correctly. If you are coding by hand, you have clear requirements and testable criteria that you can put into a ticketing system (e.g. Jira, Trello, etc). If you are using AI tools, your prompt practically writes itself (but you should still use a ticketing system and create a feature branch based on that ticket, but I digress):
 
 ```
 You are building an intelligent expense categorization feature. Here is the context:
@@ -271,9 +276,9 @@ Please implement this feature including:
 - Unit tests that verify each acceptance criterion
 ```
 
-Compare that to "build me an expense categorization feature." The difference is not subtle.
+Compare that to "build me an expense categorization feature." The difference is not subtle, and it does not matter whether a human or an AI is on the receiving end.
 
-## QA in the Age of AI: Testing What Actually Matters
+## QA: Testing What Actually Matters
 
 Here is something that keeps me up at night: AI can generate tests for the code it writes. Sounds great, right? The problem is that AI-generated tests often only cover the happy path. They test what the code does, not what it should do.
 
@@ -285,13 +290,13 @@ This is why acceptance criteria matter so much. They are not just documentation.
 
 You have just written a test case! A test case that reflects real user needs that you discovered through the Looking and Understanding phases of design thinking.
 
-The teams that are succeeding with vibe coding are the ones who:
+The teams that are shipping quality software are the ones who:
 
 1. Start with design thinking to understand the actual problem
 2. Use methods like Rose/Thorn/Bud, Affinity Clustering, and Importance/Difficulty to synthesize insights
 3. Write user stories with clear acceptance criteria
-4. Use those criteria to generate both code AND tests
-5. Review the AI output against the original user story, not just "does it run"
+4. Use those criteria to verify the implementation, however it was built
+5. Review the output against the original user story, not just "does it run"
 
 ## Metrics That Actually Mean Something
 
@@ -303,16 +308,16 @@ Some metrics that actually work:
 
 - **Acceptance Criteria Pass Rate**: What percentage of your acceptance criteria are met on first deployment?
 - **User Story Completion**: Not "did we build it" but "did we solve the problem"
-- **Prompt Iteration Count**: How many times did you have to refine your prompt to get usable code? (Fewer is better and cheaper, and it usually means your original specification was clearer)
+- **Iteration Count**: How many times did you have to go back and refine? (Fewer is better and cheaper, and it usually means your original specification was clearer)
 - **Post-Deploy Defects by Criteria Type**: Where are the bugs? In the functionality? The edge cases? The performance? This tells you where your acceptance criteria need more rigor.
 
 ## A Word of Caution
 
-I am not saying design thinking and user stories will solve all your vibe coding problems. AI still hallucinates, it still writes code that looks right but is subtly wrong. It still misses edge cases that a senior developer would catch immediately.
+I am not saying design thinking and user stories will solve all your development problems. Complex systems still have complex bugs. Edge cases still slip through. Requirements still change mid-project.
 
-But here is the thing: those problems are way easier to catch when you know what you were trying to build in the first place. When you have clear acceptance criteria, you can actually test whether the AI output is correct. When you have done the design thinking work, you can recognize when the AI is solving the wrong problem.
+But here is the thing: those problems are way easier to catch when you know what you were trying to build in the first place. When you have clear acceptance criteria, you can actually test whether the implementation is correct. When you have done the design thinking work, you can recognize when you are solving the wrong problem.
 
-The developers I know who are thriving with AI tools are not the ones who stopped thinking. They are the ones who got better at thinking and let AI handle the typing.
+The developers I know who are thriving are not the ones who type the fastest or use the newest tools. They are the ones who got better at thinking clearly about what they are building.
 
 ## Getting Started
 
@@ -328,20 +333,18 @@ If you want to try this approach, here is what I would suggest:
 
 5. **Define acceptance criteria**: For each user story, write Given/When/Then statements that describe what success looks like. These come directly from your observations. What did users say they needed? What would make the thorn disappear?
 
-6. **Store the context in your codebase**: Create a directory (something like `/docs/stories` or `/.context`) and add it to your `.gitignore`. Save your user stories and acceptance criteria as markdown or text files. When you are working with AI coding tools like Claude Code or Cursor, they can reference these files directly. This means you do not have to paste the same context into every prompt. The AI has access to the full picture: the user story, the acceptance criteria, the reasoning behind your decisions. Update these files as your understanding evolves.
+6. **Store the context in your codebase**: Create a directory (something like `/docs/stories` or `/.context`) and add it to your `.gitignore`. Save your user stories and acceptance criteria as markdown or text files. When you are working with AI coding tools like Claude Code or Cursor, they can reference these files directly. This means you do not have to paste the same context into every prompt. The AI has access to the full picture: the user story, the acceptance criteria, the reasoning behind your decisions. Update these files as your understanding evolves. Even if you are not using AI tools, having this documentation in your repo keeps everyone aligned.
 
-7. **Now write your prompt**: With your context files in place, your prompts can be shorter and more focused. Point the AI to the relevant user story file and ask it to implement a specific piece. The background is already there. You are having a conversation, not starting from scratch every time.
+7. **Build with confidence**: With your context in place, you know exactly what you are building and how to verify it. Whether you are writing code by hand, pair programming, or using AI assistance, the foundation is solid.
 
 Notice what is missing from this list: "Pick a feature." You do not start by deciding what to build, you start by understanding what problems exist. The features reveal themselves through the process.
 
-I think you will be surprised by the difference. 
-
 ## The Bottom Line
 
-Vibe coding is not going away. AI code generation is only going to get better. But the developers who will thrive are not the ones who learn to write the fanciest prompts. They are the ones who learn to think clearly about what they are building before they start.
+The way we write code is changing. AI tools are getting better every month. But the teams that will thrive are not the ones who learn to use the newest IDE or write the fanciest prompts. They are the ones who learn to think clearly about what they are building before they start.
 
-This is product management. Whether your title says "PM" or not, the moment you start defining problems, prioritizing solutions, and writing acceptance criteria, you are doing product work. Design thinking gives you the methods. User stories give you the format. Acceptance criteria give you the tests. Together, they give you the ability to direct AI toward outcomes that actually matter.
+This is product management. Whether your title says "PM" or not, the moment you start defining problems, prioritizing solutions, and writing acceptance criteria, you are doing product work. Design thinking gives you the methods. User stories give you the format. Acceptance criteria give you the tests. Together, they give you the ability to build software that actually solves problems.
 
-The irony is that as AI gets better at writing code, the human skills of understanding users, synthesizing insights, and defining success become more valuable, not less. The sticky notes on the whiteboard are not obsolete. They are now the most important part of your development process.
+The irony is that as building gets easier, the human skills of understanding users, synthesizing insights, and defining success become more valuable, not less. The sticky notes on the whiteboard are not obsolete. They are now the most important part of the process.
 
-The revolution is not in the AI, it is in what you feed it, and feeding it well is a product management problem.
+The revolution is not in the tools, it is in what you feed them, and feeding them well is a product management problem.
