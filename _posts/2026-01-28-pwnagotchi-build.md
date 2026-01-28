@@ -21,13 +21,9 @@ tags:
 title: 'Building a Cloud-Connected Pwnagotchi: From Raspberry Pi to AWS Lambda'
 ---
 
-# Building a Cloud-Connected Pwnagotchi: From Raspberry Pi to AWS Lambda
+When you watch movies about hacking, the hack is always seamless, those of us that have worked in this space know that is not the case. When I discovered the pwnagotchi—an AI-powered WiFi security tool that runs on a Raspberry Pi—I knew I had to build one. But I didn't want to just follow the standard tutorial. I wanted to take it further, I wanted it to operate more like the hacking in the movies and for it to not look suspicious. Having the device running in a backpack or pocket and receiving notifications on my phone was the goal.
 
-I've always loved projects that blur the line between hardware hacking and cloud infrastructure. When I discovered the pwnagotchi—an AI-powered WiFi security tool that runs on a Raspberry Pi—I knew I had to build one. But I didn't want to just follow the standard tutorial. I wanted to take it further.
-
-What if every WiFi handshake my pwnagotchi captured could automatically upload to the cloud? What if I could get real-time notifications on my phone and decide which networks to crack with a simple Telegram command? What if the cracking happened on AWS spot instances instead of my overworked laptop?
-
-That's exactly what I built. And in this post, I'll walk you through the setup.
+What if every WiFi handshake my pwnagotchi captured could automatically upload to the cloud? What if I could get real-time notifications on my phone and decide which networks to crack with a simple Telegram command? What if the cracking happened on AWS spot instances instead of my overworked laptop? Not only would this save my laptop, but it would also save me time and effort of going back and forth to the device, copying files, and running hashcat.
 
 ## What is a Pwnagotchi?
 
@@ -455,14 +451,13 @@ The whole thing is cost-effective because spot instances are cheap and I'm only 
 If you're interested in building your own pwnagotchi, here are some great resources:
 
 - **Official Site**: [pwnagotchi.ai](https://pwnagotchi.ai/) – Start here for the basics
-- **jayofelony's Fork**: [github.com/jayofelony/pwnagotchi](https://github.com/jayofelony/pwnagotchi) – The actively maintained fork I used recently, with updated plugins and better compatibility. (This is a way easier method than the original build)
+- **jayofelony's Fork**: [github.com/jayofelony/pwnagotchi](https://github.com/jayofelony/pwnagotchi)
 - **Discord**: The pwnagotchi community is active and helpful (Pwnagotchi Unofficial)
 - **Reddit**: Several subreddits dedicated to WiFi security and pwnagotchi builds
 
-
 ## Final Thoughts
 
-This project taught me a lot about integrating hardware with serverless architecture. The pwnagotchi itself is a fun hardware hack, but connecting it to AWS Lambda, S3, and EC2 made it something I actually use regularly.
+This project taught me a lot about integrating hardware with serverless architecture. The pwnagotchi itself is a fun hardware hack, but connecting it to AWS Lambda, S3, and EC2 made it something that you can use regularly.
 
 The key insight for me was this: **you don't need everything running 24/7**. The pwnagotchi runs on battery. The S3 bucket just sits there. Lambda functions only charge for executions. EC2 instances spin up when needed and die when done.
 
