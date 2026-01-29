@@ -21,15 +21,15 @@ tags:
 title: 'Building a Cloud-Connected Pwnagotchi: From Raspberry Pi to AWS Lambda'
 ---
 
-When you watch movies about hacking, the hack is always seamless, those of us that have worked in this space know that is not the case. When I discovered the pwnagotchi—an AI-powered WiFi security tool that runs on a Raspberry Pi—I knew I had to build one. But I didn't want to just follow the standard tutorial. I wanted to take it further, I wanted it to operate more like the hacking in the movies and for it to not look suspicious. Having the device running in a backpack or pocket and receiving notifications on my phone was the goal.
+When you watch movies about hacking, the hack is always seamless, things just work,those of us that have worked in this space know that is not the case. There are endless variables that can go wrong and cause the most simple of tasks to become a frustrating ordeal and it is not until you have done something a bunch of times that you understand the nuances of how to proceed. When I discovered the pwnagotchi—an AI-powered WiFi security tool that runs on a Raspberry Pi—I knew I had to build one. After using it for a few months I was frustrated with the process of having to manually download the pcap files and run hashcat myself. For a while I thought about how I wanted to take it further, I wanted it to communicate with me via my phone (like the Flipper Zero). I also wanted to be able to crack the handshakes automatically, but I did not want to have to deal with the effort of setting up and managing a cracking rig. 
 
-What if every WiFi handshake my pwnagotchi captured could automatically upload to the cloud? What if I could get real-time notifications on my phone and decide which networks to crack with a simple Telegram command? What if the cracking happened on AWS spot instances instead of my overworked laptop? Not only would this save my laptop, but it would also save me time and effort of going back and forth to the device, copying files, and running hashcat.
+What if every WiFi handshake my pwnagotchi captured could automatically upload to the cloud? What if I could get real-time notifications on my phone and decide which networks to crack with a simple Telegram command? What if the cracking happened on AWS spot instances instead of my subpar laptop? This would save me time and effort of going back and forth to the device, copying files, and running hashcat on a device that is not nearly as powerful as some cloud instances.
 
 ## What is a Pwnagotchi?
 
 If you're not familiar, a [pwnagotchi](https://pwnagotchi.ai/) is a "pet" that learns from WiFi networks around it. It's built on a Raspberry Pi Zero and uses AI to optimize its handshake capture strategies. Think of it as a Tamagotchi for hackers—except instead of feeding it virtual food, you're feeding it WiFi handshakes.
 
-There are already great tutorials out there for building a basic pwnagotchi, so I won't rehash the standard setup. I used [jayofelony's fork](https://github.com/jayofelony/pwnagotchi) which includes updated plugins, better hardware compatibility, and active maintenance—it made the initial setup much smoother than the original.
+There are already great tutorials out there for building a basic pwnagotchi, so I won't rehash the standard setup. I used [jayofelony's fork](https://github.com/jayofelony/pwnagotchi) which includes updated plugins, better hardware compatibility, and active maintenance, this made the initial setup much smoother than the original.
 
 Instead, this post focuses on what I added on top: a complete cloud pipeline for automated cracking.
 
@@ -44,7 +44,7 @@ Let's start with what I'm running:
 ![Waveshare 2.13" e-Paper Display (V4)](/assets/img/posts/20260128/waveshare-hat.jpg)
 ![Waveshare 2.13" e-Paper Display (V4)](/assets/img/posts/20260128/waveshare-screen.jpg)
 
-- **PiSugar Battery Module** – Portable power (mine has a V4 sticker but I'm pretty sure it's V2 based on the four blue indicator lights)
+- **PiSugar Battery Module** – Older V2 model, with 5V output.
 ![piSugar Battery Module](/assets/img/posts/20260128/pisugar.jpg)
 
 - **3D Printed Case with Button** – Protection and style
@@ -52,21 +52,21 @@ Let's start with what I'm running:
 
 - **Bluetooth Tethering** – Connected to my phone for internet access
 
-The Waveshare display is perfect for this project. It's low power, highly visible even in sunlight, and gives the pwnagotchi that retro digital pet aesthetic.
+The Waveshare display is perfect for this project. It's low power, highly visible even in sunlight, and gives the pwnagotchi that retro digital pet aesthetic, I love the faces this thing makes.
 
 ## Assembly Tips
 
-When it comes to the assembly, there are a few things that I think help. First, knowing when the pwnagotchi is booting is difficult with a case, but if you use the transparent nut/bolt that comes with the piSugar in the right spot, it will magnify the green LED, which makes it much easier to see what is going on.
+When it comes to the assembly, there are a few things that I think help. First, knowing when the pwnagotchi is booting is difficult with a case, but if you use the transparent nut/bolt that comes with the piSugar, it will magnify the green LED, which makes it much easier to see what is going on.
 
 ![piSugar LED](/assets/img/posts/20260128/example-of-led-being-brighter.jpg)
 
-Second, I recommend using a 3D printed case. There are so many variations on the build that it's best to find one that you like and print it out, I ended up going with PETG for the sake of durability, but PLA is fine for prototyping.
+Second, I recommend using a 3D printed case. There are so many variations on the build that it's best to find one that you like and print it out, I ended up going with PETG for the sake of durability, but PLA is fine for prototyping, in the images below you will see the PLA case I poorly printed during prototyping.
 
 Third, ensure that you have a USB A to Micro USB with data transfer. Setting this up is infinitely easier when you can plug the Pi directly into your computer and see the console output, ssh into it, and SCP files back and forth.
 
 ## The Architecture
 
-Most pwnagotchi setups require you to manually SSH in, grab the PCAP files, and run hashcat yourself. There is a service that can be used to crack the pcap files, [Distributed WPA PSK auditor](https://wpa-sec.stanev.org/), but I wanted a fully automated pipeline.
+Most pwnagotchi setups require you to manually SSH in, grab the PCAP files, and run hashcat yourself. There is a service that can be used to crack the pcap files, [Distributed WPA PSK auditor](https://wpa-sec.stanev.org/), but I wanted a fully automated pipeline and a quicker turnaround.
 
 Here's how it works:
 
@@ -74,13 +74,13 @@ Here's how it works:
 2. **Custom S3 upload plugin** automatically uploads the file to an S3 bucket's `staging/` folder
 3. **Lambda function triggers** when a new file arrives it then sends a Telegram notification
 4. **I receive a message** on my phone with the network SSID, BSSID, and job ID
-5. **I reply via Telegram** with `/approve [job-id]` or `/reject [job-id]`
+5. **I reply via Telegram** with `/approve [job-id]` or `/reject [job-id]` (clicking on the approve or rejected link copies it to your clipboard)
 6. **Another Lambda function** processes my command and moves the file to `approved/` or `rejected/`
 7. **A job launcher Lambda** detects approved files and spins up an EC2 spot instance
 8. **The EC2 instance** runs GPU-accelerated hashcat with the rockyou wordlist
 9. **Results are uploaded** back to S3 and I get a Telegram notification with the cracked password
 
-The entire system is serverless except for the short-lived EC2 instances that actually do the cracking. This keeps costs low—I only pay for compute when I'm actively cracking a handshake.
+The entire system is serverless except for the short-lived EC2 instances that actually do the cracking. This keeps costs low, I only pay for compute when I'm actively cracking a handshake.
 
 ## Code Deep Dive
 
@@ -273,7 +273,9 @@ def lambda_handler(event, context):
     return {'statusCode': 200, 'body': 'Notifications sent'}
 ```
 
-The beauty of this setup is that I get an instant notification every time my pwnagotchi catches a new network. I can be anywhere and decide whether it's worth cracking.
+The beauty of this setup is that I get an instant notification every time my pwnagotchi catches a new network and updates while it goes through the steps. With a lot of companies sharing spaces or having a few floors of a building there is a huge chance that you will get multiple handshakes from neighboring networks, which you are not authorized to attack. By having the ability to approve or reject a network I can ensure that I am only cracking handshakes that I am authorized to crack.
+
+![Screenshot of Telegram notification](/assets/img/posts/20260128/telegram-screenshot.png)
 
 Here's what the notification looks like when a new network is captured:
 
@@ -347,7 +349,7 @@ Password not found in rockyou.txt wordlist.
 Try a different wordlist or move on to the next target.
 ```
 
-This real-time feedback makes the whole system feel alive. It's like having a hacking assistant in my pocket.
+This real-time feedback is very helpful because it lets me know exactly what is going on with the pipeline, and if there are any issues I can issue a `/kill [job-id]` command to terminate the EC2 instance and investigate what went wrong, and the pcap file is still in S3 so I can try again later if I want to.
 
 
 ### Lambda: Telegram Webhook
@@ -394,7 +396,7 @@ You'll receive a notification when complete.
         send_telegram_message(f"❌ Error: {str(e)}", chat_id)
 ```
 
-I also added `/status` and `/kill` commands. `/status [job-id]` shows where a job is in the pipeline, and `/kill [job-id]` terminates a running EC2 instance if I change my mind mid-crack.
+I also added `/status` and `/kill` commands. `/status [job-id]` shows where a job is in the pipeline, and `/kill [job-id]` terminates a running EC2 instance if I change my mind mid-crack or if it is taking too long.
 
 ### Pwnagotchi Configuration
 
@@ -405,7 +407,7 @@ On the pwnagotchi side, the config is straightforward. Here's a sanitized versio
 main.name = "[yourpwnagotchi]"
 main.whitelist = [
     "[YourHomeNetwork]",
-    "[YourPhoneHotspot]"
+    "[YourNeighborsNetwork]"
 ]
 
 # PiSugar battery support
@@ -416,7 +418,7 @@ main.plugins.bt-tether.enabled = true
 main.plugins.bt-tether.share_internet = true
 main.plugins.bt-tether.phone-name = "[YourPhone]"
 main.plugins.bt-tether.phone = "android"
-main.plugins.bt-tether.ip = "192.168.44.44"
+main.plugins.bt-tether.ip = "[YOUR:Phone:IP:Address]"
 main.plugins.bt-tether.mac = "[YOUR:MAC:ADDRESS]"
 
 # Waveshare display configuration
@@ -424,7 +426,7 @@ ui.display.enabled = true
 ui.display.type = "waveshare_4"
 ui.invert = true
 
-# Web interface access
+# Web interface access (if you want to use the web interface)
 ui.web.address = "0.0.0.0"
 ui.web.username = "[admin]"
 ui.web.password = "[your_secure_password]"
@@ -463,6 +465,6 @@ The key insight for me was this: **you don't need everything running 24/7**. The
 
 It's a model that works for a lot of side projects. Build the always-on parts cheap (or free), and use on-demand compute for the heavy lifting.
 
-If you build something similar, I'd love to hear about it. And if you're part of the pwnagotchi community, feel free to reach out—I'm always looking to learn new tricks.
+If you build something similar, I'd love to hear about it. And if you're part of the pwnagotchi community, feel free to reach out, I'm always looking to learn new tricks.
 
 Happy hacking! 🤖🔓
