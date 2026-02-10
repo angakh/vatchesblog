@@ -11,7 +11,9 @@ read_time: true
 show_date: true
 tags:
 - Artificial Intelligence
+- Data Science & Analytics
 - Privacy & Ethics
+- RAG
 title: 'AI Gets a Cheat Sheet: Retrieval Augmentation Explained'
 ---
 
